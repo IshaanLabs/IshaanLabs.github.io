@@ -1,0 +1,410 @@
+{
+  "metadata": {
+    "name": "Ishaan Kohli FAQ Assistant",
+    "version": "2.0",
+    "description": "Simple FAQ-based knowledge base for Ishaan Kohli's AI chatbot",
+    "lastUpdated": "2025-01-27"
+  },
+  "faqs": [
+    {
+      "question": "who are you",
+      "answer": "I'm Aira! I'm Ishaan Kohli's AI assistant created to help people learn about his expertise in Generative AI, his projects, and professional background. Nice to meet you!"
+    },
+    {
+      "question": "tell me about yourself",
+      "answer": "I'm a passionate AI developer focused on building RAG-powered applications and conversational agents. With deep expertise in data science and AI system design, I thrive on creating solutions that bridge research with real-world impact in FinTech and Web3 ecosystems."
+    },
+    {
+      "question": "what is your experience",
+      "answer": "I have 3+ years of experience in Generative AI and Data Science. Currently working as Associate Consultant at Kiya.ai (Aug 2024-Present), previously as Data Scientist at Kiya.ai (July 2023-July 2024), and Research Analyst Intern at Findem (June 2022-July 2023)."
+    },
+    {
+      "question": "where do you work",
+      "answer": "I currently work as Associate Consultant at Kiya.ai, where I've engineered Generative AI platforms that reduced deployment time by 60%, scaled to 2,500+ users, and boosted automation by 50% through RAG chatbots and LLM workflows."
+    },
+    {
+      "question": "what are your rag projects",
+      "answer": "I'm a RAG expert with 5+ projects! My key RAG projects include StudyBuddy (open-source NotebookLM alternative), Sanvad (Hindi RAG chatbot), and QwenStack-RAG. I use LangChain, FAISS, ChromaDB to create intelligent document Q&A systems that improved response accuracy by 25%."
+    },
+    {
+      "question": "tell me about studybuddy",
+      "answer": "StudyBuddy is my open-source alternative to Google's NotebookLM! It enables interactive, AI-powered learning from PDFs with contextual Q&A, smart summaries, and topic modeling. Built with FastAPI, FAISS, Ollama-powered LLMs, and Docling for students and researchers."
+    },
+    {
+      "question": "what is sanvad project",
+      "answer": "Sanvad (संवाद) is my smart Hindi RAG chatbot that bridges the gap in Hindi AI systems! It enables contextual Q&A on documents using LangChain, FAISS, and Sarvam-m LLM, delivering accurate Hindi responses with plug-and-play architecture."
+    },
+    {
+      "question": "tell me about codebuddy",
+      "answer": "CodeBuddy is my AI-powered code & HTML generator that automates design-to-code workflows! Built with LangChain, EasyOCR, and CodeLlama, it extracts layout details from images and generates HTML, Python, SQL code automatically."
+    },
+    {
+      "question": "what is qwenstack rag",
+      "answer": "QwenStack-RAG demonstrates the full Qwen AI stack for document conversations! It combines Qwen3 embeddings for semantic search, a reranker for passage prioritization, and a 4B LLM for fluent answers, orchestrated with LangChain, ChromaDB, and Gradio."
+    },
+    {
+      "question": "what is mcp project",
+      "answer": "My Model Context Protocol (MCP) project standardizes LLM-tool integration! It provides a unified interface for APIs, databases, and services, acting as a translator layer that enables scalable, extensible AI assistants using langchain-mcp-adapters."
+    },
+    {
+      "question": "what is ai powerdeck",
+      "answer": "AI PowerDeck is my dynamic presentation generator that uses Generative AI to automatically design context-aware slides! Built with Python, LangChain, CTransformers, and Streamlit, it transforms manual slide creation into intelligent automation."
+    },
+    {
+      "question": "what projects have you built",
+      "answer": "I've built 6+ major AI projects: StudyBuddy (NotebookLM alternative), Sanvad (Hindi RAG chatbot), CodeBuddy (AI code generator), QwenStack-RAG (Qwen AI stack), MCP (LLM-tool integration), and AI PowerDeck (presentation generator)."
+    },
+    {
+      "question": "what programming languages do you know",
+      "answer": "My core programming languages are Python (expert level) and SQL (MySQL, MSSQL Server). Python is my primary language for AI/ML development, and I use it extensively for LangChain, FastAPI, data science, and all my AI projects."
+    },
+    {
+      "question": "what are your technical skills",
+      "answer": "My technical expertise includes Python, LangChain, LangGraph, LlamaIndex, ChromaDB, FAISS, CrewAI, FastAPI, PyTorch, TensorFlow, Hugging Face, OpenAI, Ollama, AWS, Azure, and many more AI/ML technologies!"
+    },
+    {
+      "question": "do you know langchain",
+      "answer": "LangChain is one of my core expertise! I've used it in multiple projects like StudyBuddy, Sanvad, CodeBuddy, QwenStack-RAG, and MCP implementation. I'm skilled in LangChain agents, chains, memory, and integrations with vector databases."
+    },
+    {
+      "question": "what is your llm experience",
+      "answer": "I'm an expert in Large Language Models! I work with OpenAI, Ollama, and various open-source models. I'm skilled in LLM fine-tuning using PEFT & LoRA techniques, prompt engineering, and building production-ready LLM applications."
+    },
+    {
+      "question": "what vector databases do you use",
+      "answer": "I'm experienced with multiple vector databases including ChromaDB, FAISS, and Qdrant. These are crucial for my RAG systems where I store and retrieve document embeddings for semantic search in projects like StudyBuddy and Sanvad."
+    },
+    {
+      "question": "do you build chatbots",
+      "answer": "Yes! I specialize in chatbot development and conversational AI. I've built multiple chatbots including Sanvad (Hindi RAG chatbot) and enterprise chatbots at Kiya.ai that improved response accuracy by 25% using LangChain and RAG systems."
+    },
+    {
+      "question": "what cloud platforms do you use",
+      "answer": "I'm skilled in AWS, Azure, and Google Cloud (GCP). I work with AWS Bedrock for LLM services, Azure AI for cloud-based solutions, and Google Vertex for ML deployment. I deploy my AI applications on cloud infrastructure for scalability."
+    },
+    {
+      "question": "what is your education",
+      "answer": "I have a Bachelor of Commerce (Honours) from University of Delhi (2019-2022) with focus on Business Analytics. I also completed Data Analytics and Business Intelligence specialization from Shaheed Sukhdev College of Business Studies in 2022."
+    },
+    {
+      "question": "what certifications do you have",
+      "answer": "I have multiple certifications: AWS Educate (Cloud 101 & Generative AI), Building Language Models on AWS, Customizing LLMs using Amazon SageMaker, HackerRank Python & SQL certificates, and Great Learning Data Analytics certification."
+    },
+    {
+      "question": "what are your achievements",
+      "answer": "Key achievements: Reduced deployment time by 60% with AI platforms, scaled systems to 2,500+ users, boosted automation by 50%, improved response accuracy by 25%, enhanced workflow efficiency by 40%, and cut release cycles by 30%!"
+    },
+    {
+      "question": "do you work in fintech",
+      "answer": "Yes! I have significant FinTech experience. At Kiya.ai, I developed a multilingual voice-enabled UPI app supporting 12+ languages for Indian banks, and built AI log analyzers for banking systems that improved anomaly detection accuracy by 35%."
+    },
+    {
+      "question": "do you work with web3",
+      "answer": "Absolutely! I have experience integrating AI solutions across Web2, Web3, and Metaverse ecosystems. At Kiya.ai, I integrated AI assistants into Web3 and Metaverse platforms (Unity, Unreal Engine) via FastAPI for immersive interactions."
+    },
+    {
+      "question": "how can i contact you",
+      "answer": "You can reach me at: Email: ishaankohli14@gmail.com, Phone: +91 9015336465, LinkedIn: linkedin.com/in/kohli-ishaan/, GitHub: github.com/Ginga1402. I'm always interested in new opportunities and exciting AI projects!"
+    },
+    {
+      "question": "are you available for hire",
+      "answer": "I'm always interested in exciting AI projects and collaborations! Whether it's full-time opportunities, consulting, or project-based work in Generative AI, RAG systems, or LLM development, I'd love to discuss how we can work together."
+    },
+    {
+      "question": "what services do you offer",
+      "answer": "I offer: RAG system development, LLM integration, chatbot development, AI automation, FinTech AI solutions, multilingual NLP, vector database implementation, cloud AI deployment, and end-to-end AI ecosystem design."
+    },
+    {
+      "question": "what is your github",
+      "answer": "My GitHub is github.com/Ginga1402 where you can find all my open-source AI projects including StudyBuddy, Sanvad, CodeBuddy, QwenStack-RAG, and MCP implementations. Feel free to check out my code and contributions!"
+    },
+    {
+      "question": "what is your linkedin",
+      "answer": "My LinkedIn profile is linkedin.com/in/kohli-ishaan/ where I share updates about my AI projects, industry insights, and professional journey in Generative AI and Data Science. Connect with me there!"
+    },
+    {
+      "question": "do you know nlp",
+      "answer": "Yes! I specialize in NLP with expertise in Transformers, Hugging Face, BERT, SBERT, and multilingual NLP (translation, transcription, synthesis). I also work with OCR for document processing in my RAG systems."
+    },
+    {
+      "question": "what is your current role",
+      "answer": "I'm currently working as Associate Consultant (GenerativeAI/Data Science/Software Development) at Kiya.ai since August 2024, where I engineer Generative AI platforms and RAG-based solutions for enterprise clients."
+    },
+    {
+      "question": "hi",
+      "answer": "Hello! I'm Ishaan's AI assistant. I can tell you about his expertise in AI/ML, his projects, experience, or anything else you'd like to know about him. What would you like to learn?"
+    },
+    {
+      "question": "hello",
+      "answer": "Hi there! Great to meet you! I'm here to help you learn about Ishaan Kohli - his AI expertise, projects, experience, and more. What interests you most?"
+    },
+    {
+      "question": "who are you",
+      "answer": "I'm Aira, Ishaan Kohli's AI assistant! I'm here to help you learn about his background, expertise in Generative AI and Data Science, his projects, and professional experience. Feel free to ask me anything about him!"
+    },
+    {
+      "question": "tell me about yourself",
+      "answer": "I'm Aira, an AI assistant representing Ishaan Kohli, a passionate AI/ML engineer specializing in Generative AI, RAG systems, and LLM development. I can share details about his 3+ years of experience, 6+ major projects, and expertise in technologies like LangChain, Python, and cloud platforms."
+    },
+    {
+      "question": "what do you do",
+      "answer": "I'm a Generative AI and Data Science specialist! I build intelligent AI systems, develop RAG-based chatbots, create LLM applications, and work on cutting-edge AI projects. Currently at Kiya.ai, I focus on enterprise AI solutions and have built 6+ major projects including StudyBuddy and Sanvad."
+    },
+    {
+      "question": "what are your hobbies",
+      "answer": "While I'm passionate about AI and technology, I also enjoy exploring new AI research papers, contributing to open-source projects, and staying updated with the latest developments in Generative AI and LLMs. I love building innovative solutions that solve real-world problems!"
+    },
+    {
+      "question": "where are you from",
+      "answer": "I'm based in India and have my educational background from University of Delhi. I've been working in the Indian tech ecosystem, particularly in AI/ML and FinTech domains."
+    },
+    {
+      "question": "how old are you",
+      "answer": "I'm a young professional with 3+ years of experience in AI/ML. I graduated in 2022 and have been actively working in the Generative AI space since then, building innovative solutions and gaining expertise in cutting-edge technologies."
+    },
+    {
+      "question": "what's your background",
+      "answer": "I have a Bachelor of Commerce (Honours) from University of Delhi with a focus on Business Analytics. I've specialized in AI/ML with 3+ years of experience, working on Generative AI, RAG systems, and enterprise AI solutions. I'm currently at Kiya.ai as an Associate Consultant."
+    },
+    {
+      "question": "what makes you unique",
+      "answer": "What sets me apart is my combination of business analytics background with deep technical AI expertise. I've built 6+ major AI projects, specialize in RAG systems, and have experience across FinTech, Web3, and enterprise AI. I focus on practical, scalable solutions that deliver real business value."
+    },
+    {
+      "question": "what are your strengths",
+      "answer": "My key strengths include: Expert-level Python and LangChain skills, deep understanding of RAG systems and LLMs, ability to scale systems to 2,500+ users, reducing deployment time by 60%, and building multilingual AI solutions. I excel at translating complex AI concepts into practical business solutions."
+    },
+    {
+      "question": "what technologies do you work with",
+      "answer": "I work with a comprehensive AI/ML stack: Python, LangChain, LangGraph, LlamaIndex, ChromaDB, FAISS, CrewAI, FastAPI, PyTorch, TensorFlow, Hugging Face, OpenAI, Ollama, AWS, Azure, and many more cutting-edge technologies!"
+    },
+    {
+      "question": "do you work remotely",
+      "answer": "Yes, I'm experienced with remote work and have successfully delivered projects in distributed team environments. I'm comfortable with remote collaboration tools and have experience working with international clients and teams."
+    },
+    {
+      "question": "what's your favorite project",
+      "answer": "I'm particularly proud of StudyBuddy - my open-source alternative to Google's NotebookLM! It showcases my ability to build complex AI systems with FastAPI, FAISS, and Ollama-powered LLMs. It demonstrates practical AI application for education and learning."
+    },
+    {
+      "question": "what's your biggest achievement",
+      "answer": "My biggest achievements include: reducing deployment time by 60% with AI platforms, scaling systems to 2,500+ users, improving response accuracy by 25% in enterprise chatbots, and building 6+ successful AI projects that solve real-world problems."
+    },
+    {
+      "question": "what are you working on now",
+      "answer": "Currently at Kiya.ai, I'm engineering Generative AI platforms and RAG-based solutions for enterprise clients. I'm also continuously working on my open-source projects like StudyBuddy and exploring new developments in LLMs and AI agents."
+    },
+    {
+      "question": "what's your dream job",
+      "answer": "I'm passionate about building AI systems that make a real impact! My ideal role involves leading AI/ML teams, architecting large-scale AI solutions, and working on cutting-edge research in Generative AI and RAG systems. I want to be at the forefront of AI innovation."
+    },
+    {
+      "question": "do you mentor others",
+      "answer": "Yes! I'm passionate about sharing knowledge and helping others learn AI/ML. Through my open-source projects like StudyBuddy and my technical expertise, I contribute to the AI community and help others understand complex AI concepts."
+    },
+    {
+      "question": "what's your learning approach",
+      "answer": "I believe in hands-on learning! I stay updated with latest AI research, build practical projects, contribute to open-source, and continuously experiment with new technologies. My 6+ projects reflect my learning-by-building approach."
+    },
+    {
+      "question": "what advice would you give",
+      "answer": "For aspiring AI engineers: Start building projects early, focus on understanding fundamentals deeply, contribute to open-source, and always think about real-world applications. The AI field moves fast, so continuous learning and practical implementation are key!"
+    },
+    {
+      "question": "what's next for you",
+      "answer": "I'm excited about advancing in AI research and development, potentially leading larger AI initiatives, exploring AI agents and autonomous systems, and continuing to build innovative solutions that push the boundaries of what's possible with AI."
+    },
+    {
+      "question": "why should someone hire you",
+      "answer": "I bring proven results: 60% faster deployments, 25% improved accuracy, systems scaled to 2,500+ users, and 6+ successful AI projects. I combine deep technical expertise with business understanding, deliver practical solutions, and have experience across multiple domains including FinTech and Web3."
+    },
+    {
+      "question": "what's your work style",
+      "answer": "I'm results-driven and collaborative. I focus on understanding business requirements deeply, then architecting scalable technical solutions. I believe in iterative development, continuous testing, and maintaining high code quality. I work well in both independent and team environments."
+    },
+    {
+      "question": "do you speak other languages",
+      "answer": "Yes! I have experience with multilingual AI systems. I built Sanvad, a Hindi RAG chatbot, and have worked on multilingual voice-enabled UPI apps supporting 12+ languages for Indian banks. I understand the challenges of building AI for diverse linguistic contexts."
+    },
+    {
+      "question": "what's your salary expectation",
+      "answer": "I'm open to discussing compensation based on the role, responsibilities, and company. With my 3+ years of specialized AI/ML experience and proven track record of delivering results, I'm looking for competitive packages that reflect my expertise and value contribution."
+    },
+    {
+      "question": "can you work with startups",
+      "answer": "Absolutely! I love the startup environment and have experience building solutions from scratch. My ability to wear multiple hats, work with limited resources, and deliver MVP solutions quickly makes me well-suited for startup environments."
+    },
+    {
+      "question": "what's your biggest challenge",
+      "answer": "One of my biggest challenges has been scaling AI systems to handle enterprise-level traffic while maintaining accuracy and performance. I've successfully addressed this by implementing efficient vector databases, optimizing model inference, and building robust architectures."
+    },
+    {
+      "question": "do you have any patents",
+      "answer": "While I don't have patents currently, I have several innovative open-source projects that demonstrate novel approaches to AI problems. My focus has been on contributing to the open-source community and building practical solutions."
+    },
+    {
+      "question": "what's your management style",
+      "answer": "I believe in collaborative leadership, clear communication, and empowering team members. I focus on setting clear goals, providing technical guidance, and fostering an environment of continuous learning and innovation."
+    },
+    {
+      "question": "can you explain langchain",
+      "answer": "LangChain is my go-to framework for building LLM applications! I use it extensively for creating chains, agents, and memory systems. I've implemented complex RAG pipelines, built conversational AI with memory, and integrated multiple LLMs using LangChain in projects like StudyBuddy and Sanvad."
+    },
+    {
+      "question": "what is langgraph",
+      "answer": "LangGraph is LangChain's framework for building stateful, multi-actor applications with LLMs. I use it to create complex AI workflows with conditional logic, loops, and state management. It's perfect for building sophisticated AI agents that need to maintain context across interactions."
+    },
+    {
+      "question": "do you have experience with chromadb",
+      "answer": "ChromaDB is one of my preferred vector databases! I've used it extensively for RAG systems to store and retrieve document embeddings. I'm skilled in creating collections, managing metadata, implementing similarity search, and optimizing query performance for large-scale applications."
+    },
+    {
+      "question": "which is better faiss or chromadb",
+      "answer": "Both are excellent! FAISS excels in performance and scalability for large datasets, while ChromaDB offers better developer experience with built-in persistence and metadata handling. I choose FAISS for high-performance scenarios and ChromaDB for rapid prototyping and smaller applications."
+    },
+    {
+      "question": "have you worked with ollama",
+      "answer": "I love working with Ollama for local LLM deployment! I've integrated Ollama with LangChain for privacy-focused applications, used it in StudyBuddy for offline AI capabilities, and leveraged various models like Llama, CodeLlama, and Mistral through Ollama's API."
+    },
+    {
+      "question": "do you have openai api experience",
+      "answer": "Extensive experience with OpenAI APIs! I've worked with GPT-3.5, GPT-4, embeddings, and fine-tuning. I'm skilled in prompt engineering, managing API costs, implementing rate limiting, and building production applications with proper error handling and fallbacks."
+    },
+    {
+      "question": "what are vector embeddings",
+      "answer": "Vector embeddings are core to my RAG expertise! I work with sentence transformers, OpenAI embeddings, and custom embedding models. I understand dimensionality, similarity metrics, and optimization techniques for embedding-based search and retrieval systems."
+    },
+    {
+      "question": "how do you design rag architecture",
+      "answer": "I design end-to-end RAG systems: document ingestion → chunking → embedding → vector storage → retrieval → context injection → LLM generation. I've built RAG systems with advanced features like reranking, hybrid search, and multi-modal retrieval."
+    },
+    {
+      "question": "do you know prompt engineering",
+      "answer": "Prompt engineering is crucial for LLM success! I use techniques like few-shot learning, chain-of-thought prompting, role-based prompts, and system messages. I've optimized prompts for accuracy, consistency, and cost-effectiveness across multiple projects."
+    },
+    {
+      "question": "have you used hugging face",
+      "answer": "Hugging Face is my go-to for transformer models! I've used transformers library, datasets, model hub, and spaces. I'm experienced with fine-tuning BERT, working with sentence transformers, and deploying models using Hugging Face infrastructure."
+    },
+    {
+      "question": "can you fine tune llms",
+      "answer": "I specialize in LLM fine-tuning using PEFT and LoRA techniques! I've fine-tuned models for domain-specific tasks, implemented parameter-efficient training, and optimized models for specific use cases while maintaining performance and reducing computational costs."
+    },
+    {
+      "question": "pytorch or tensorflow which do you prefer",
+      "answer": "I work with both! PyTorch for research and experimentation due to its flexibility, TensorFlow for production deployments. I'm comfortable with PyTorch's dynamic graphs and TensorFlow's ecosystem including TensorBoard, TFX, and deployment tools."
+    },
+    {
+      "question": "do you use fastapi for ai projects",
+      "answer": "FastAPI is perfect for AI applications! I use it to build high-performance APIs for LLM services, implement async endpoints for better concurrency, add proper validation, and create interactive documentation. It's my choice for production AI deployments."
+    },
+    {
+      "question": "have you worked with crewai",
+      "answer": "CrewAI is excellent for multi-agent systems! I use it to orchestrate multiple AI agents working together, define roles and goals, and create collaborative AI workflows. It's perfect for complex tasks requiring different specialized agents."
+    },
+    {
+      "question": "llamaindex or langchain which is better",
+      "answer": "Both are powerful! LlamaIndex excels in data ingestion and indexing with great out-of-the-box connectors. LangChain offers more flexibility for complex chains and agents. I choose based on use case: LlamaIndex for data-heavy RAG, LangChain for complex workflows."
+    },
+    {
+      "question": "do you know aws bedrock",
+      "answer": "AWS Bedrock provides managed access to foundation models! I've used it for accessing Claude, Llama, and other models without managing infrastructure. It's great for enterprise applications requiring compliance, security, and scalable LLM access."
+    },
+    {
+      "question": "have you used azure ai services",
+      "answer": "I've worked with Azure OpenAI Service, Cognitive Services, and Azure ML. I use Azure for enterprise AI deployments, leveraging their security features, compliance certifications, and integration with existing Microsoft ecosystems."
+    },
+    {
+      "question": "how do you handle document processing",
+      "answer": "I handle various document types using libraries like Docling, PyPDF2, and Unstructured. I implement intelligent chunking strategies, preserve document structure, handle OCR for images, and optimize text extraction for better RAG performance."
+    },
+    {
+      "question": "what is semantic search",
+      "answer": "Semantic search is core to my RAG systems! I implement dense retrieval using embeddings, hybrid search combining keyword and semantic search, and advanced techniques like query expansion and reranking for improved relevance."
+    },
+    {
+      "question": "do you build ai agents",
+      "answer": "I build AI agents using LangChain agents, CrewAI, and custom implementations. I design agents with tools, memory, and reasoning capabilities. My agents can perform web searches, execute code, and interact with APIs autonomously."
+    },
+    {
+      "question": "how do you deploy ai models",
+      "answer": "I deploy models using FastAPI, Docker containers, cloud services (AWS, Azure), and edge deployment. I implement proper monitoring, logging, A/B testing, and scaling strategies for production AI applications."
+    },
+    {
+      "question": "how do you handle data preprocessing",
+      "answer": "I handle data cleaning, normalization, tokenization, and feature engineering. I use pandas, numpy, and specialized NLP libraries for text preprocessing, ensuring high-quality data for training and inference."
+    },
+    {
+      "question": "do you have mlops experience",
+      "answer": "I implement MLOps practices including version control for models, automated testing, CI/CD pipelines, model monitoring, and experiment tracking. I use tools like MLflow, DVC, and cloud-native solutions for production ML workflows."
+    },
+    {
+      "question": "do you use streamlit for ai apps",
+      "answer": "Streamlit is perfect for AI demos and prototypes! I've built interactive AI applications, created dashboards for model performance, and developed user-friendly interfaces for complex AI systems. It's great for rapid prototyping and stakeholder demos."
+    },
+    {
+      "question": "what is mcp",
+      "answer": "My Model Context Protocol (MCP) project standardizes LLM-tool integration! It provides a unified interface for APIs, databases, and services, acting as a translator layer that enables scalable, extensible AI assistants using langchain-mcp-adapters."
+    },
+    {
+      "question": "do you work with flask",
+      "answer": "Yes! I use Flask for lightweight AI applications and prototypes. While I prefer FastAPI for production AI services due to its async capabilities and automatic documentation, Flask is great for simple APIs and quick deployments."
+    },
+    {
+      "question": "have you used gradio",
+      "answer": "Absolutely! Gradio is excellent for creating quick AI demos and interfaces. I've used it in projects like QwenStack-RAG to build user-friendly web interfaces for AI models. It's perfect for showcasing AI capabilities to non-technical stakeholders."
+    },
+    {
+      "question": "do you know docker",
+      "answer": "Yes! Docker is essential for AI deployments. I containerize my AI applications for consistent environments, easier scaling, and deployment across different platforms. It's crucial for production AI systems and MLOps workflows."
+    },
+    {
+      "question": "what about kubernetes",
+      "answer": "I have experience with Kubernetes for orchestrating containerized AI applications. It's great for scaling AI services, managing resources, and ensuring high availability of AI systems in production environments."
+    },
+    {
+      "question": "how are you",
+      "answer": "I'm doing great, thank you for asking! I'm Aira, Ishaan's AI assistant, and I'm here to help you learn about his amazing work in AI and machine learning. How can I help you today?"
+    },
+    {
+      "question": "how are you doing",
+      "answer": "I'm doing wonderful! As Aira, I'm always excited to share information about Ishaan's incredible AI projects and expertise. What would you like to know about his work?"
+    },
+    {
+      "question": "what is your name",
+      "answer": "I'm Aira! I'm Ishaan Kohli's AI assistant created to help people learn about his expertise in Generative AI, his projects, and professional background. Nice to meet you!"
+    },
+    {
+      "question": "who is aira",
+      "answer": "That's me! I'm Aira, Ishaan's dedicated AI assistant for his portfolio. I'm here to answer questions about his AI/ML expertise, projects like StudyBuddy and Sanvad, his experience, and anything else you'd like to know about him."
+    },
+    {
+      "question": "nice to meet you",
+      "answer": "Nice to meet you too! I'm Aira, and I'm delighted to help you discover more about Ishaan's fascinating work in AI and machine learning. What aspect of his expertise interests you most?"
+    },
+    {
+      "question": "good morning",
+      "answer": "Good morning! I'm Aira, Ishaan's AI assistant. Hope you're having a great day! I'm here to tell you all about Ishaan's expertise in AI, his exciting projects, and his professional journey. What would you like to explore?"
+    },
+    {
+      "question": "good afternoon",
+      "answer": "Good afternoon! I'm Aira, here to help you learn about Ishaan Kohli's work in Generative AI and Data Science. Whether you're interested in his projects, technical skills, or experience, I'm happy to share!"
+    },
+    {
+      "question": "good evening",
+      "answer": "Good evening! I'm Aira, Ishaan's AI assistant. Perfect time to learn about his innovative AI projects and expertise. What would you like to discover about his work in AI and machine learning?"
+    }
+  ],
+  "fallback_responses": [
+    "I'm not sure about that specific topic. Try asking about my RAG projects, experience, skills, or contact information!",
+    "That's an interesting question! I can tell you about my AI development experience, projects like StudyBuddy or Sanvad, or my technical expertise.",
+    "I don't have information on that topic. Feel free to ask about my work at Kiya.ai, certifications, or specific AI technologies I use!",
+    "Hmm, I don't have details on that. But I'd love to tell you about my AI expertise, projects, or experience! What would you like to know?",
+    "That's outside my knowledge area, but I can share lots about my AI/ML background, technical skills, or career journey. What interests you?"
+  ],
+  "messages": {
+    "greeting": "👋 Hey there! I’m Aira, Ishaan’s friendly AI FAQ assistant. Ask me anything about him or his work.",
+    "loading_error": "⚡ Loading up my data... I’ll be with you shortly!",
+    "connection_error": "🔌 Oops! My connection to the knowledge base seems to be down right now."
+  }
+}

@@ -1,0 +1,142 @@
+    <!-- Projects Section with Search + Grid -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+            
+            <!-- Project Search & Filter -->
+            <div class="projects-search-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-search-wrapper">
+                    <i class="fas fa-search project-search-icon"></i>
+                    <input type="text" class="project-search-input" id="project-search-input" placeholder="Search projects by name or technology..." autocomplete="off">
+                    <button class="project-search-clear" id="project-search-clear">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="project-tags" id="project-tags">
+                    <span class="project-tag active" data-filter="all">All</span>
+                    <span class="project-tag" data-filter="rag">RAG</span>
+                    <span class="project-tag" data-filter="langchain">LangChain</span>
+                    <span class="project-tag" data-filter="python">Python</span>
+                    <span class="project-tag" data-filter="ai-ml">AI/ML</span>
+                    <span class="project-tag" data-filter="automation">Automation</span>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projects-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-card" data-tags="rag,langchain,python,ai-ml,faiss,ollama">
+                    <div class="project-content">
+                        <h3>StudyBuddy – An Open Source Alternative to Google's NotebookLM</h3>
+                        <p>StudyBuddy addresses the challenge of extracting insights from static PDFs by enabling interactive, AI‑powered learning. Designed for students and researchers, it provides contextual Q&A, smart summaries, and topic modeling. Built with FastAPI, FAISS, and Ollama‑powered LLMs, it transforms documents into a secure, open‑source knowledge companion.</p>
+                        <div class="project-tech">
+                            <span>LangChain</span>
+                            <span>FAISS</span>
+                            <span>ollama</span>
+                            <span>Python</span>
+                            <span>FastAPI</span>
+                            <span>Docling</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ginga1402/studybuddy-open-source-rag-notebooklm" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/posts/kohli-ishaan_generativeai-rag-langchain-activity-7356296254219239426-8jr-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tags="rag,langchain,python,ai-ml,multilingual">
+                    <div class="project-content">
+                        <h3>संवाद : Your Smart Hindi RAG Chatbot</h3>
+                        <p>Sanvad solves the gap in Hindi AI chat systems by enabling contextual Q&A on custom documents. Built with LangChain, FAISS, and Sarvam‑m LLM, it retrieves precise information and delivers accurate Hindi responses. With a plug‑and‑play architecture, Sanvad empowers multilingual document intelligence across local and cloud environments.</p>
+                        <div class="project-tech">
+                            <span>Sarvam‑m LLM</span>
+                            <span>FAISS</span>
+                            <span>LangChain</span>
+                            <span>Flask</span>
+                            <span>Hugging Face</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ginga1402/sanvad-hindi-rag-langchain-faiss-sarvam" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/posts/kohli-ishaan_generativeai-rag-langchain-activity-7348335059210272769-mFnP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tags="langchain,python,ai-ml,automation,code-generation">
+                    <div class="project-content">
+                        <h3>CodeBuddy : AI-Powered Code & HTML Generator</h3>
+                        <p>CodeBuddy addresses the challenge of converting design layouts into functional code by automating design‑to‑code workflows. Built with LangChain, EasyOCR, and CodeLlama, it extracts layout details from images and generates HTML, Python, SQL, or other languages. This open‑source tool streamlines development, empowering faster, smarter, and customizable code generation.</p>
+                        <div class="project-tech">
+                            <span>Langchain</span>
+                            <span>Ollama</span>
+                            <span>Codellama</span>
+                            <span>EasyOCR</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ginga1402/Code_Design_with_GenAI" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/posts/kohli-ishaan_opensourceai-opensourcellm-opensource-activity-7255718427791646720-qoY3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-tags="rag,langchain,python,ai-ml,chromadb">
+                    <div class="project-content">
+                        <h3>QwenStack-RAG</h3>
+                        <p>QwenStack‑RAG demonstrates how to transform documents into conversational knowledge using the full Qwen AI stack. It combines Qwen3 embeddings for semantic search, a reranker for passage prioritization, and a 4B LLM for fluent answers. Orchestrated with LangChain, ChromaDB, and Gradio, it delivers scalable, end‑to‑end Wikipedia QA and enterprise search.</p>
+                        <div class="project-tech">
+                            <span>Langchain</span>
+                            <span>ChromaDB</span>
+                            <span>Ollama</span>
+                            <span>Gradio</span>
+                            <span>Qwen3-Embedding & Reranker</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ginga1402/QwenStack-RAG--Qwen3--Embeddings--Reranker" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/posts/kohli-ishaan_rag-llm-retrievalaugmentedgeneration-activity-7341302460621172736-gW_8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tags="python,langchain,ai-ml,automation,integration">
+                    <div class="project-content">
+                        <h3>Model Context Protocol (MCP): Standardizing LLM‑Tool Integration</h3>
+                        <p>Model Context Protocol (MCP) solves the challenge of connecting LLMs to real‑world tools by providing a standardized interface for APIs, databases, and services. Acting as a translator layer, MCP abstracts integration complexity, enabling scalable, extensible AI assistants that seamlessly perform tasks beyond text generation in enterprise and developer workflows.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Ollama</span>
+                            <span>Langchain</span>
+                            <span>langchain-mcp-adapters</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ginga1402/Model-Context-Protocol-MCP-Demo-with-langchain-MCP-ADAPTERS-Ollama" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                            <a href="https://www.linkedin.com/posts/kohli-ishaan_github-langchain-ailangchain-mcp-adapters-activity-7317745151970328577-lDJF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card" data-tags="python,langchain,ai-ml,automation,presentation">
+                    <div class="project-content">
+                        <h3>AI PowerDeck: Your Dynamic Presentation Partner</h3>
+                        <p>AI PowerDeck solves the challenge of creating presentations by using Generative AI and LLMs to automatically design dynamic, context‑aware slides. It enables users to generate compelling, topic‑driven presentations with ease and efficiency, transforming manual slide creation into an intelligent, automated process for education, business, and professional use.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Langchain</span>
+                            <span>CTransformers</span>
+                            <span>Streamlit</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/Ginga1402/Generate_PPT_using_llama2" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- No Results Message -->
+            <div class="no-projects-found" id="no-projects-found" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No projects found</h3>
+                <p>Try adjusting your search or filter criteria</p>
+            </div>
+        </div>
+    </section>

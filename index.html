@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="<p>I am a Generative AI Developer and Data Scientist focused on building RAG-powered AI applications, conversational agents, and LLM-driven workflows that empower businesses to scale intelligent automation. With deep expertise in data science, AI system design, and cross-domain integration, I thrive on creating solutions that bridge research with real-world impact in sectors such as FinTech and emerging Web3 ecosystems.</p>TF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ishaan Kohli - Generative AI Developer & Data Scientist with 3+ years of experience in specializing in RAG, LLMs, and Agentic AI — building intelligent chatbots, FinTech AI solutions, and scalable automation for Web2 and Web3 ecosystems.">
     <meta name="keywords" content="Generative AI Developer, Data Scientist, RAG pipelines, LLM Expert,Ishaan Kohli, Agentic AI, Prompt Engineering, FinTech AI, Chatbot Developer, Web2 AI Solutions, Web3 AI Solutions, Python, AI Automation, NLP, Vector Databases, LangChain, ChromaDB, FAISS, CrewAI, LangGraph, Cloud AI, AWS, AI Portfolio, AI System Design, Scalable AI Solutions">
@@ -10,12 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
     
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    
     <!-- SEO Meta Tags -->
     <meta property="og:title" content="Ishaan Kohli - Generative AI Developer & Data Scientist">
     <meta property="og:description" content="Generative AI Developer & Data Scientist with 3+ years of experience in RAG, LLMs, and Agentic AI — building intelligent chatbots, FinTech AI solutions, and scalable automation.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://ginga1402.github.io/">
-    <!-- <meta property="og:image" content="https://ishaankohli.dev/og-image.jpg"> -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Ishaan Kohli - Generative AI Developer & Data Scientist">
     <meta name="twitter:description" content="Generative AI Developer & Data Scientist specializing in RAG, LLMs, and Agentic AI solutions.">
@@ -109,6 +114,29 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
+        <!-- Background Terminal Animation -->
+        <div class="terminal-background" id="terminal-background">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-controls">
+                        <span class="terminal-btn close"></span>
+                        <span class="terminal-btn minimize"></span>
+                        <span class="terminal-btn maximize"></span>
+                    </div>
+                    <div class="terminal-title">ishaan@ai-developer: ~/projects</div>
+                </div>
+                <div class="terminal-body">
+                    <div class="terminal-content" id="terminal-content">
+                        <div class="terminal-line">
+                            <span class="terminal-prompt">ishaan@ai-developer:~/projects$</span>
+                            <span class="terminal-cursor">_</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hero Content -->
         <div class="hero-content" data-aos="fade-up">
             <h1>Hi, I'm <span class="highlight">Ishaan Kohli</span></h1>
             <h2>Generative AI Developer & Data Scientist</h2>
@@ -127,6 +155,9 @@
 
     <!-- About Section -->
     <section id="about" class="about">
+        <!-- Neural Network Background -->
+        <canvas id="neural-network-canvas" class="neural-network-bg"></canvas>
+        
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">About Me</h2>
             <div class="about-content" data-aos="fade-up" data-aos-delay="200">
@@ -134,17 +165,48 @@
                     <p>I am a Generative AI Developer and Data Scientist focused on building RAG-powered AI applications, conversational agents, and LLM-driven workflows that empower businesses to scale intelligent automation. With deep expertise in data science, AI system design, and cross-domain integration, I thrive on creating solutions that bridge research with real-world impact in sectors such as FinTech and emerging Web3 ecosystems.</p>
                     <p>My technical expertise centers around Python, LangChain, LLamaindex, ChromaDB, FAISS, CrewAI, LangGraph, PyTorch, and TensorFlow, along with cloud-native deployments (AWS, Azure, GCP) and API-driven automation pipelines. Skilled in machine learning, NLP, vector databases, and agentic AI frameworks, I design and implement end-to-end AI ecosystems—from multi-format data ingestion and contextual RAG pipelines to enterprise-ready chatbots and scalable AI agents.</p>
                     <div class="about-stats">
-                        <div class="stat">
-                            <h3>3+</h3>
+                        <div class="stat" data-aos="zoom-in" data-aos-delay="300">
+                            <div class="stat-icon">💼</div>
+                            <h3 class="counter" data-target="3">0</h3>
                             <p>Years Experience</p>
+                            <div class="stat-progress">
+                                <div class="stat-fill" data-width="75%"></div>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <h3>5+</h3>
+                        <div class="stat" data-aos="zoom-in" data-aos-delay="400">
+                            <div class="stat-icon">🎯</div>
+                            <h3 class="counter" data-target="5">0</h3>
                             <p>Customers Served</p>
+                            <div class="stat-progress">
+                                <div class="stat-fill" data-width="85%"></div>
+                            </div>
                         </div>
-                        <div class="stat">
-                            <h3>15+</h3>
+                        <div class="stat" data-aos="zoom-in" data-aos-delay="500">
+                            <div class="stat-icon">🚀</div>
+                            <h3 class="counter" data-target="15">0</h3>
                             <p>Technologies Mastered</p>
+                            <div class="stat-progress">
+                                <div class="stat-fill" data-width="90%"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Achievement Badges -->
+                    <div class="achievement-badges" data-aos="fade-up" data-aos-delay="600">
+                        <div class="achievement-badge" data-achievement="rag-expert">
+                            <div class="badge-icon">🏆</div>
+                            <div class="badge-text">RAG Expert</div>
+                            <div class="badge-tooltip">10+ RAG Projects Delivered</div>
+                        </div>
+                        <div class="achievement-badge" data-achievement="agent-deployer">
+                            <div class="badge-icon">🚀</div>
+                            <div class="badge-text">Agent Deployer</div>
+                            <div class="badge-tooltip">Live AI Agents in Production</div>
+                        </div>
+                        <div class="achievement-badge" data-achievement="enterprise-ai">
+                            <div class="badge-icon">🏢</div>
+                            <div class="badge-text">Enterprise AI</div>
+                            <div class="badge-tooltip">Scalable AI Solutions Delivered</div>
                         </div>
                     </div>
                 </div>
@@ -154,18 +216,21 @@
 
     <!-- Skills Section -->
     <section id="skills" class="skills">
+        <!-- Neural Network Background -->
+        <canvas id="skills-neural-canvas" class="neural-network-bg"></canvas>
+        
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Skills & Technologies</h2>
             <div class="skills-grid" data-aos="fade-up" data-aos-delay="200">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
+                <div class="skill-category featured-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
                     <div class="skill-items">
                         <span class="skill-item">Python</span>
                         <span class="skill-item">SQL (MySQL, MSSQL Server)</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Machine Learning & Data Science</h3>
+                <div class="skill-category featured-category">
+                    <h3><i class="fas fa-brain"></i> Machine Learning & Data Science</h3>
                     <div class="skill-items">
                         <span class="skill-item">Machine Learning</span>
                         <span class="skill-item">Deep Learning</span>
@@ -175,8 +240,8 @@
                         <span class="skill-item">Exploratory Data Analysis (EDA)</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Natural Language Processing (NLP)</h3>
+                <div class="skill-category featured-category">
+                    <h3><i class="fas fa-language"></i> Natural Language Processing (NLP)</h3>
                     <div class="skill-items">
                         <span class="skill-item">NLP</span>
                         <span class="skill-item">Transformers</span>
@@ -187,8 +252,8 @@
                         <span class="skill-item">OCR</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Generative AI & LLMs</h3>
+                <div class="skill-category featured-category">
+                    <h3><i class="fas fa-robot"></i> Generative AI & LLMs</h3>
                     <div class="skill-items">
                         <span class="skill-item">LLMs (Large Language Models)</span>
                         <span class="skill-item">RAG (Retrieval Augmented Generation)</span>
@@ -204,8 +269,8 @@
                         <span class="skill-item">PEFT & LoRA</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>AI-Powered Chatbots, Agents & Workflow Automation</h3>
+                <div class="skill-category featured-category">
+                    <h3><i class="fas fa-comments"></i> AI-Powered Chatbots, Agents & Workflow Automation</h3>
                     <div class="skill-items">
                         <span class="skill-item">Chatbot Development</span>
                         <span class="skill-item">Workflow Orchestration</span>
@@ -219,8 +284,8 @@
                         <span class="skill-item">Autogen</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Microservices, Backend & Version Control</h3>
+                <div class="skill-category featured-category">
+                    <h3><i class="fas fa-server"></i> Microservices, Backend & Version Control</h3>
                     <div class="skill-items">
                         <span class="skill-item">FastAPI</span>
                         <span class="skill-item">FlaskAPI</span>
@@ -230,8 +295,8 @@
                         <span class="skill-item">GitLab</span>
                     </div>
                 </div>
-                <div class="skill-category">
-                    <h3>Cloud & Deployment</h3>
+                <div class="skill-category featured-category">
+                    <h3><i class="fas fa-cloud"></i> Cloud & Deployment</h3>
                     <div class="skill-items">
                         <span class="skill-item">LLMOps</span>
                         <span class="skill-item">AWS</span>
@@ -247,6 +312,9 @@
 
     <!-- Certifications Section -->
     <section id="certifications" class="certifications">
+        <!-- Neural Network Background -->
+        <canvas id="certifications-neural-canvas" class="neural-network-bg"></canvas>
+        
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Certifications</h2>
             <div class="certifications-grid" data-aos="fade-up" data-aos-delay="200">
@@ -297,11 +365,6 @@
                         <i class="fab fa-aws"></i>
                     </div>
                     <h3>Building Language Models on AWS</h3>
-                    <!-- <div class="credential-id">
-                        <span class="credential-label">Credential ID:</span>
-                        <span class="credential-value"></span>
-                    </div> -->
-                    <!-- <a href="https://www.linkedin.com/in/kohli-ishaan/details/certifications/1751903467993/single-media-viewer/?profileId=ACoAADuthhUBlaKQAoIwUzaKNcLb4ftav7Y-_Gw" target="_blank" class="cert-link"> -->
                     <a href="https://drive.google.com/file/d/1gTuqb-DkRZZp3-ryiw66P-SjzDaQ26ud/view?usp=sharing" target="_blank" class="cert-link">
                         <i class="fas fa-external-link-alt"></i>
                         View Certificate
@@ -340,11 +403,6 @@
                         <i class="fab fa-aws"></i>
                     </div>
                     <h3>Customizing and Evaluating LLMs Using Amazon SageMaker</h3>
-                    <!-- <div class="credential-id">
-                        <span class="credential-label">Credential ID:</span>
-                        <span class="credential-value"></span>
-                    </div> -->
-                    <!-- <a href="https://www.linkedin.com/in/kohli-ishaan/details/certifications/1752528784910/single-media-viewer/?profileId=ACoAADuthhUBlaKQAoIwUzaKNcLb4ftav7Y-_Gw" target="_blank" class="cert-link"> -->
                     <a href="https://drive.google.com/file/d/1fZZXM1vTQM94kL4F9HeSl3iD5m1oCFz0/view?usp=sharing" target="_blank" class="cert-link">
                         <i class="fas fa-external-link-alt"></i>
                         View Certificate
@@ -356,49 +414,154 @@
 
     <!-- Experience Section -->
     <section id="experience" class="experience">
+        <!-- Neural Network Background -->
+        <canvas id="experience-neural-canvas" class="neural-network-bg"></canvas>
+        
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Experience</h2>
-            <div class="timeline" data-aos="fade-up" data-aos-delay="200">
-                <div class="timeline-item">
-                    <div class="timeline-date">August 2024 - Present</div>
-                    <div class="timeline-content">
+            <div class="experience-timeline" data-aos="fade-up" data-aos-delay="200">
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="experience-header">
+                        <div class="company-logo kiya-logo">
+                            <img src="./company_logo/Kiya_ai_Logo.jpg" alt="Kiya.ai Logo">
+                        </div>
+                        <div class="experience-meta">
+                            <div class="experience-date">August 2024 - Present</div>
+                            <div class="experience-duration">1 year 3 months</div>
+                        </div>
+                    </div>
+                    <div class="experience-content">
                         <h3>Associate Consultant (GenerativeAI/Data Science/Software Development)</h3>
                         <h4>Kiya.ai</h4>
-                        <p>I have engineered Generative AI platforms that reduced deployment time by 60%, scaled to 2,500+ users, and boosted automation by 50% through RAG chatbots and LLM workflows. I also designed FinTech AI pipelines improving anomaly detection accuracy by 35% and developed a multilingual UPI app supporting 12+ languages for secure, scalable digital banking.</p>
-                        <ul>
-                            <li>Engineered a no‑code Generative AI Admin Portal enabling clients to build and deploy RAG‑based chatbots with intelligent workflows in minutes. Designed modular microservices for multi‑format ingestion (PDF, DOCX, CSV, URLs), automated data validation, and context‑aware training with multi‑output formats (text, images, source traceability). Integrated open‑source (Mistral, LLaMA) and commercial LLMs (OpenAI, Anthropic), with CrewAI and LangGraph agents for dynamic query classification and parameter extraction. Deployed on GPU‑accelerated AWS infrastructure, achieving 2,500+ concurrent users with low‑latency response times and 50% higher automation coverage.</li>
-                            <li>Engineered an AI log analyzer converting banking system logs into natural language summaries. Developed fine‑tuned LLM pipelines for anomaly detection, boosting accuracy by 35%. Delivered as secure FastAPI microservices, ensuring compliance in FinTech environments.</li>
-                            <li>Developed a multilingual voice‑enabled UPI app live across Indian public sector banks. Supported 12+ languages, secure payment workflows, and context‑aware responses. Leveraged SBERT, NER, and zero‑shot classification with REST APIs on Azure Cloud.</li>
-                        </ul>
+                        <p class="experience-summary">I have engineered Generative AI platforms that reduced deployment time by 60%, scaled to 2,500+ users, and boosted automation by 50% through RAG chatbots and LLM workflows. I also designed FinTech AI pipelines improving anomaly detection accuracy by 35% and developed a multilingual UPI app supporting 12+ languages for secure, scalable digital banking.</p>
+                        <div class="experience-details">
+                            <div class="details-toggle" onclick="toggleDetails(this)">
+                                <span>View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <ul class="experience-achievements">
+                                <li>Engineered a no‑code Generative AI Admin Portal enabling clients to build and deploy RAG‑based chatbots with intelligent workflows in minutes. Designed modular microservices for multi‑format ingestion (PDF, DOCX, CSV, URLs), automated data validation, and context‑aware training with multi‑output formats (text, images, source traceability). Integrated open‑source (Mistral, LLaMA) and commercial LLMs (OpenAI, Anthropic), with CrewAI and LangGraph agents for dynamic query classification and parameter extraction. Deployed on GPU‑accelerated AWS infrastructure, achieving 2,500+ concurrent users with low‑latency response times and 50% higher automation coverage.</li>
+                                <li>Engineered an AI log analyzer converting banking system logs into natural language summaries. Developed fine‑tuned LLM pipelines for anomaly detection, boosting accuracy by 35%. Delivered as secure FastAPI microservices, ensuring compliance in FinTech environments.</li>
+                                <li>Developed a multilingual voice‑enabled UPI app live across Indian public sector banks. Supported 12+ languages, secure payment workflows, and context‑aware responses. Leveraged SBERT, NER, and zero‑shot classification with REST APIs on Azure Cloud.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-tags">
+                            <span class="tag">Generative AI</span>
+                            <span class="tag">RAG Chatbots</span>
+                            <span class="tag">LLM Workflows</span>
+                            <span class="tag">No-Code AI Platforms</span>
+                            <span class="tag">FinTech AI</span>
+                            <span class="tag">Anomaly Detection</span>
+                            <span class="tag">Multilingual AI Systems</span>
+                            <span class="tag">Voice-Enabled Banking Apps</span>
+                            <span class="tag">Context-Aware Automation</span>
+                            <span class="tag">AWS</span>
+                            <span class="tag">Azure</span>
+                            <span class="tag">Microservices Architecture</span>
+                            <span class="tag">OpenAI</span>
+                            <span class="tag">Anthropic</span>
+                            <span class="tag">Mistral</span>
+                            <span class="tag">LLaMA</span>
+                            <span class="tag">CrewAI</span>
+                            <span class="tag">LangGraph</span>
+                            <span class="tag">SBERT</span>
+                            <span class="tag">NER</span>
+                            <span class="tag">Zero-Shot Classification</span>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">July 2023 - July 2024</div>
-                    <div class="timeline-content">
+                
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="experience-header">
+                        <div class="company-logo kiya-logo">
+                            <img src="./company_logo/Kiya_ai_Logo.jpg" alt="Kiya.ai Logo">
+                        </div>
+                        <div class="experience-meta">
+                            <div class="experience-date">July 2023 - July 2024</div>
+                            <div class="experience-duration">1 year</div>
+                        </div>
+                    </div>
+                    <div class="experience-content">
                         <h3>Data Scientist</h3>
                         <h4>Kiya.ai</h4>
-                        <p>As a Data Scientist, I transformed chatbots into RAG‑powered Generative AI assistants, improving response accuracy by 25%, workflow efficiency by 40%, and reducing latency with LangChain, LlamaIndex, and vector databases. I also engineered NLP pipelines and integrated AI solutions across Web2, Web3, and Metaverse, collaborating with 25+ engineers to cut release cycles by 30%.</p>
-                        <ul>
-                            <li>Upgraded rule‑based chatbots into contextual SBERT‑based QA systems, boosting response accuracy by 25% and workflow efficiency by 40%.</li>
-                            <li>Introduced RAG pipelines with LangChain, LlamaIndex, FAISS, and ChromaDB, significantly enhancing contextual relevance and reducing response latency in production.</li>
-                            <li>Developed conversation summarizers for sentiment and intent tracking, increasing qualified lead capture and enabling data‑driven business targeting.</li>
-                            <li>Integrated AI assistants into Web2, Web3, and Metaverse ecosystems (Unity, Unreal Engine) via FastAPI, delivering immersive, real‑time interactions across platforms.</li>
-                            <li>Drove collaboration with 25+ cross‑functional engineers, streamlining deployment workflows and cutting release cycles by 30%.</li>
-                        </ul>
+                        <p class="experience-summary">As a Data Scientist, I transformed chatbots into RAG‑powered Generative AI assistants, improving response accuracy by 25%, workflow efficiency by 40%, and reducing latency with LangChain, LlamaIndex, and vector databases. I also engineered NLP pipelines and integrated AI solutions across Web2, Web3, and Metaverse, collaborating with 25+ engineers to cut release cycles by 30%.</p>
+                        <div class="experience-details">
+                            <div class="details-toggle" onclick="toggleDetails(this)">
+                                <span>View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <ul class="experience-achievements">
+                                <li>Upgraded rule‑based chatbots into contextual SBERT‑based QA systems, boosting response accuracy by 25% and workflow efficiency by 40%.</li>
+                                <li>Introduced RAG pipelines with LangChain, LlamaIndex, FAISS, and ChromaDB, significantly enhancing contextual relevance and reducing response latency in production.</li>
+                                <li>Developed conversation summarizers for sentiment and intent tracking, increasing qualified lead capture and enabling data‑driven business targeting.</li>
+                                <li>Integrated AI assistants into Web2, Web3, and Metaverse ecosystems (Unity, Unreal Engine) via FastAPI, delivering immersive, real‑time interactions across platforms.</li>
+                                <li>Drove collaboration with 25+ cross‑functional engineers, streamlining deployment workflows and cutting release cycles by 30%.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-tags">
+                            <span class="tag">Generative AI</span>
+                            <span class="tag">RAG Chatbots</span>
+                            <span class="tag">Contextual QA Systems</span>
+                            <span class="tag">SBERT</span>
+                            <span class="tag">LangChain</span>
+                            <span class="tag">LlamaIndex</span>
+                            <span class="tag">FAISS</span>
+                            <span class="tag">ChromaDB</span>
+                            <span class="tag">NLP Pipelines</span>
+                            <span class="tag">Conversation Summarization</span>
+                            <span class="tag">Sentiment Analysis</span>
+                            <span class="tag">Intent Analysis</span>
+                            <span class="tag">Latency Reduction</span>
+                            <span class="tag">Web2 & Web3 AI Integration</span>
+                            <span class="tag">Metaverse AI Integration</span>
+                            <span class="tag">Mistral</span>
+                            <span class="tag">Transformers</span>
+                            <span class="tag">Hugging Face</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">Flask API</span>
+                            <span class="tag">Deployment & Release Optimization</span>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-date">June 2022 - July 2023</div>
-                    <div class="timeline-content">
+                
+                <div class="experience-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="experience-header">
+                        <div class="company-logo findem-logo">
+                            <img src="./company_logo/findem_Logo.webp" alt="Findem Logo">
+                        </div>
+                        <div class="experience-meta">
+                            <div class="experience-date">June 2022 - July 2023</div>
+                            <div class="experience-duration">1 year 1 months</div>
+                        </div>
+                    </div>
+                    <div class="experience-content">
                         <h3>Research Analyst Intern</h3>
                         <h4>Findem</h4>
-                        <p>Improved candidate classification accuracy by 15% through AI‑driven automation, engineered Python workflows boosting preprocessing by 40%, and drove 15% higher lead conversions with targeted outreach.</p>
-                        <ul>
-                            <li>Analyzed 10,000+ candidate–organization records to refine a classification model, improving accuracy by 15% and enabling more effective candidate-job fits on Findem's 3D Data platform.</li>
-                            <li>Supported deployment of an AI-driven classification bot, accelerating model rollout and reducing manual review time.</li>
-                            <li>Built an optimized Python-based data extraction workflow, boosting preprocessing efficiency by 40%.</li>
-                            <li>Segmented prospect database using advanced analytics to enable targeted outreach, resulting in 20% more focused engagement and a 15% uplift in lead conversions.</li>
-                        </ul>
+                        <p class="experience-summary">Improved candidate classification accuracy by 15% through AI‑driven automation, engineered Python workflows boosting preprocessing by 40%, and drove 15% higher lead conversions with targeted outreach.</p>
+                        <div class="experience-details">
+                            <div class="details-toggle" onclick="toggleDetails(this)">
+                                <span>View Details</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <ul class="experience-achievements">
+                                <li>Analyzed 10,000+ candidate–organization records to refine a classification model, improving accuracy by 15% and enabling more effective candidate-job fits on Findem's 3D Data platform.</li>
+                                <li>Supported deployment of an AI-driven classification bot, accelerating model rollout and reducing manual review time.</li>
+                                <li>Built an optimized Python-based data extraction workflow, boosting preprocessing efficiency by 40%.</li>
+                                <li>Segmented prospect database using advanced analytics to enable targeted outreach, resulting in 20% more focused engagement and a 15% uplift in lead conversions.</li>
+                            </ul>
+                        </div>
+                        <div class="experience-tags">
+                            <span class="tag">AI-Driven Automation</span>
+                            <span class="tag">Candidate Classification</span>
+                            <span class="tag">Python Workflows</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Preprocessing Optimization</span>
+                            <span class="tag">Machine Learning Models</span>
+                            <span class="tag">Lead Conversion Optimization</span>
+                            <span class="tag">Targeted Outreach</span>
+                            <span class="tag">Data Extraction</span>
+                            <span class="tag">Workflow Automation</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -407,133 +570,66 @@
 
     <!-- Projects Section -->
     <section id="projects" class="projects">
+        <!-- Neural Network Background -->
+        <canvas id="projects-neural-canvas" class="neural-network-bg"></canvas>
+        
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
-            <div class="projects-carousel-container" data-aos="fade-up" data-aos-delay="200">
-                <button class="carousel-btn carousel-prev" id="carousel-prev">
-                    <i class="fas fa-chevron-left"></i>
+            
+            <!-- Project Search & Filter -->
+            <div class="projects-search-container" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-search-wrapper">
+                    <i class="fas fa-search project-search-icon"></i>
+                    <input type="text" class="project-search-input" id="project-search-input" placeholder="Search projects by name or technology..." autocomplete="off">
+                    <button class="project-search-clear" id="project-search-clear">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+                <div class="project-tags" id="project-tags">
+                    <span class="project-tag active" data-filter="all">All</span>
+                    <span class="project-tag" data-filter="rag">RAG</span>
+                    <span class="project-tag" data-filter="genai">GenAI</span>
+                    <span class="project-tag" data-filter="ai-agents">AI Agents</span>
+                    <span class="project-tag" data-filter="mcp">MCP</span>
+                    <span class="project-tag" data-filter="data-analysis">Data Analytics</span>
+                    <!-- <span class="project-tag" data-filter="python">Python</span> -->
+                    <span class="project-tag" data-filter="sql">SQL</span>
+                    <span class="project-tag" data-filter="ai-ml">AI/ML</span>
+                </div>
+            </div>
+
+            <!-- Projects Grid -->
+            <div class="projects-grid" id="projects-grid" data-aos="fade-up" data-aos-delay="200">
+                <!-- Projects will be loaded dynamically from projects.json -->
+            </div>
+            
+            <!-- Pagination Controls -->
+            <div class="pagination-container" id="pagination-container" style="display: none;">
+                <button class="pagination-btn" id="prev-page" disabled>
+                    <i class="fas fa-chevron-left"></i> Previous
                 </button>
-                <div class="projects-carousel-wrapper">
-                    <div class="projects-carousel" id="projects-carousel">
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>StudyBuddy – An Open Source Alternative to Google’s NotebookLM</h3>
-                        <p>StudyBuddy addresses the challenge of extracting insights from static PDFs by enabling interactive, AI‑powered learning. Designed for students and researchers, it provides contextual Q&A, smart summaries, and topic modeling. Built with FastAPI, FAISS, and Ollama‑powered LLMs, it transforms documents into a secure, open‑source knowledge companion.</p>
-                        <div class="project-tech">
-                            <span>LangChain</span>
-                            <span>FAISS</span>
-                            <span>ollama</span>
-                            <span>Python</span>
-                            <span>FastAPI</span>
-                            <span>Docling</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Ginga1402/studybuddy-open-source-rag-notebooklm" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/posts/kohli-ishaan_generativeai-rag-langchain-activity-7356296254219239426-8jr-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
+                <div class="pagination-info" id="pagination-info">
+                    Page <span id="current-page">1</span> of <span id="total-pages">1</span>
                 </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>संवाद : Your Smart Hindi RAG Chatbot</h3>
-                        <p>Sanvad solves the gap in Hindi AI chat systems by enabling contextual Q&A on custom documents. Built with LangChain, FAISS, and Sarvam‑m LLM, it retrieves precise information and delivers accurate Hindi responses. With a plug‑and‑play architecture, Sanvad empowers multilingual document intelligence across local and cloud environments.</p>
-                        <div class="project-tech">
-                            <span>Sarvam‑m LLM</span>
-                            <span>FAISS</span>
-                            <span>LangChain</span>
-                            <span>Flask</span>
-                            <span>Hugging Face</span>
-                            <span>Streamlit</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Ginga1402/sanvad-hindi-rag-langchain-faiss-sarvam" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/posts/kohli-ishaan_generativeai-rag-langchain-activity-7348335059210272769-mFnP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>CodeBuddy : AI-Powered Code & HTML Generator</h3>
-                        <p>CodeBuddy addresses the challenge of converting design layouts into functional code by automating design‑to‑code workflows. Built with LangChain, EasyOCR, and CodeLlama, it extracts layout details from images and generates HTML, Python, SQL, or other languages. This open‑source tool streamlines development, empowering faster, smarter, and customizable code generation.</p>
-                        <div class="project-tech">
-                            <span>Langchain</span>
-                            <span>Ollama</span>
-                            <span>Codellama</span>
-                            <span>EasyOCR</span>
-                            <span>Streamlit</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Ginga1402/Code_Design_with_GenAI" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/posts/kohli-ishaan_opensourceai-opensourcellm-opensource-activity-7255718427791646720-qoY3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>QwenStack-RAG</h3>
-                        <p>QwenStack‑RAG demonstrates how to transform documents into conversational knowledge using the full Qwen AI stack. It combines Qwen3 embeddings for semantic search, a reranker for passage prioritization, and a 4B LLM for fluent answers. Orchestrated with LangChain, ChromaDB, and Gradio, it delivers scalable, end‑to‑end Wikipedia QA and enterprise search.</p>
-                        <div class="project-tech">
-                            <span>Langchain</span>
-                            <span>ChromaDB</span>
-                            <span>Ollama</span>
-                            <span>Gradio</span>
-                            <span>Qwen3-Embedding & Reranker</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Ginga1402/QwenStack-RAG--Qwen3--Embeddings--Reranker" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/posts/kohli-ishaan_rag-llm-retrievalaugmentedgeneration-activity-7341302460621172736-gW_8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>Model Context Protocol (MCP): Standardizing LLM‑Tool Integration</h3>
-                        <p>Model Context Protocol (MCP) solves the challenge of connecting LLMs to real‑world tools by providing a standardized interface for APIs, databases, and services. Acting as a translator layer, MCP abstracts integration complexity, enabling scalable, extensible AI assistants that seamlessly perform tasks beyond text generation in enterprise and developer workflows.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Ollama</span>
-                            <span>Langchain</span>
-                            <span>langchain-mcp-adapters</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/Ginga1402/Model-Context-Protocol-MCP-Demo-with-langchain-MCP-ADAPTERS-Ollama" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
-                            <a href="https://www.linkedin.com/posts/kohli-ishaan_github-langchain-ailangchain-mcp-adapters-activity-7317745151970328577-lDJF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M" target="_blank" class="project-link" title="LinkedIn Post"><i class="fab fa-linkedin"></i></a>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-content">
-                        <h3>AI PowerDeck: Your Dynamic Presentation Partner</h3>
-                        <p>AI PowerDeck solves the challenge of creating presentations by using Generative AI and LLMs to automatically design dynamic, context‑aware slides. It enables users to generate compelling, topic‑driven presentations with ease and efficiency, transforming manual slide creation into an intelligent, automated process for education, business, and professional use.</p>
-                        <div class="project-tech">
-                            <span>Python</span>
-                            <span>Langchain</span>
-                            <span>CTransformers</span>
-                            <span>Streamlit</span>
-                        </div>
-
-                        <div class="project-links">
-                            <a href="https://github.com/Ginga1402/Generate_PPT_using_llama2" target="_blank" class="project-link" title="GitHub Repository"><i class="fab fa-github"></i></a>
-                        </div>
-                    </div>
-                </div>
-
-                    </div>
-                </div>
-                <button class="carousel-btn carousel-next" id="carousel-next">
-                    <i class="fas fa-chevron-right"></i>
+                <button class="pagination-btn" id="next-page">
+                    Next <i class="fas fa-chevron-right"></i>
                 </button>
             </div>
-            <div class="carousel-indicators" id="carousel-indicators">
-                <span class="indicator active" data-slide="0"></span>
-                <span class="indicator" data-slide="1"></span>
+            
+            <!-- No Results Message -->
+            <div class="no-projects-found" id="no-projects-found" style="display: none;">
+                <i class="fas fa-search"></i>
+                <h3>No projects found</h3>
+                <p>Try adjusting your search or filter criteria</p>
             </div>
         </div>
     </section>
 
     <!-- Education Section -->
     <section id="education" class="education">
+        <!-- Neural Network Background -->
+        <canvas id="education-neural-canvas" class="neural-network-bg"></canvas>
+        
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Education</h2>
             <div class="education-content" data-aos="fade-up" data-aos-delay="200">
@@ -565,8 +661,75 @@
         </div>
     </section>
 
+    <!-- Floating AI Chatbot -->
+    <div class="floating-chatbot-btn" id="floating-chatbot-btn">
+        <i class="fas fa-robot"></i>
+        <div class="chatbot-pulse"></div>
+    </div>
+    
+    <!-- Chatbot Popup Overlay -->
+    <div class="chatbot-overlay" id="chatbot-overlay">
+        <div class="chatbot-popup" id="chatbot-popup">
+            <div class="chatbot-header">
+                <div class="chatbot-avatar">
+                    <i class="fas fa-robot"></i>
+                </div>
+                <div class="chatbot-info">
+                    <h4>Aira by Ishaan</h4>
+                    <span class="status online">Online</span>
+                </div>
+                <div class="chatbot-controls">
+                    <button class="close-btn" id="close-chatbot">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <div class="chatbot-messages" id="chatbot-messages">
+                <div class="message bot-message">
+                    <div class="message-avatar">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="message-content">
+                        <p>Hi! I'm Aira, Ishaan's AI assistant. Ask me about his RAG expertise, projects, experience, or anything else!</p>
+                        <div class="message-time">Just now</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- <div class="chatbot-suggestions" id="chatbot-suggestions">
+                <button class="suggestion-btn" data-query="Tell me about your RAG projects">RAG Projects</button>
+                <button class="suggestion-btn" data-query="What's your experience?">Experience</button>
+                <button class="suggestion-btn" data-query="Show me your skills">Skills</button>
+                <button class="suggestion-btn" data-query="How can I contact you?">Contact</button>
+            </div> -->
+            
+            <div class="chatbot-suggestions" id="chatbot-suggestions">
+                <button class="suggestion-btn" data-query="Tell me about your RAG projects">RAG Projects</button>
+                <button class="suggestion-btn" data-query="What's your experience?">Experience</button>
+                <button class="suggestion-btn" data-query="Show me your skills">Skills</button>
+                <button class="suggestion-btn" data-query="How can I contact you?">Contact</button>
+            </div>
+            
+            <div class="chatbot-input-area">
+                <div class="input-wrapper">
+                    <input type="text" id="chatbot-input" placeholder="Ask about my AI expertise..." autocomplete="off">
+                    <button id="send-message" class="send-btn">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+                <div class="typing-indicator" id="typing-indicator">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Contact Section -->
     <section id="contact" class="contact">
+        <!-- Neural Network Background -->
+        <canvas id="contact-neural-canvas" class="neural-network-bg"></canvas>
+        
         <div class="container">
             <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
             <div class="contact-content" data-aos="fade-up" data-aos-delay="200">
@@ -623,5 +786,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="script.js"></script>
+    <script src="dynamic-search.js"></script>
+    <script src="chatbot-engine.js"></script>
+    <script src="terminal-animation.js"></script>
+    <script src="projects-loader.js"></script>
+    <script src="neural-network.js"></script>
 </body>
 </html>

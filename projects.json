@@ -1,0 +1,307 @@
+{
+  "projects": [
+    {
+      "id": "studybuddy",
+      "index": 24,
+      "title": "📚 StudyBuddy – An Open Source Alternative to Google's NotebookLM",
+      "description": "StudyBuddy addresses the challenge of extracting insights from static PDFs by enabling interactive, AI‑powered learning. Designed for students and researchers, it provides contextual Q&A, smart summaries, and topic modeling. Built with FastAPI, FAISS, and Ollama‑powered LLMs, it transforms documents into a secure, open‑source knowledge companion.",
+      "technologies": ["LangChain", "FAISS", "ollama", "Python", "FastAPI", "Docling"],
+      "tags": ["rag", "langchain", "python", "ai-agents", "genai", "faiss", "ollama"],
+      "links": {
+        "github": "https://github.com/Ginga1402/studybuddy-open-source-rag-notebooklm",
+        "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_generativeai-rag-langchain-activity-7356296254219239426-8jr-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
+      }
+    },
+    {
+      "id": "sanvad",
+      "index": 23,
+      "title": "💬 संवाद : Your Smart Hindi RAG Chatbot",
+      "description": "Sanvad solves the gap in Hindi AI chat systems by enabling contextual Q&A on custom documents. Built with LangChain, FAISS, and Sarvam‑m LLM, it retrieves precise information and delivers accurate Hindi responses. With a plug‑and‑play architecture, Sanvad empowers multilingual document intelligence across local and cloud environments.",
+      "technologies": ["Sarvam‑m LLM", "FAISS", "LangChain", "Flask", "Hugging Face", "Streamlit"],
+      "tags": ["rag", "langchain", "python", "multilingual"],
+      "links": {
+        "github": "https://github.com/Ginga1402/sanvad-hindi-rag-langchain-faiss-sarvam",
+        "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_generativeai-rag-langchain-activity-7348335059210272769-mFnP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
+      }
+    },
+    {
+      "id": "codebuddy",
+      "index": 22,
+      "title": "CodeBuddy 🤖: AI-Powered Code & HTML Generator",
+      "description": "CodeBuddy addresses the challenge of converting design layouts into functional code by automating design‑to‑code workflows. Built with LangChain, EasyOCR, and CodeLlama, it extracts layout details from images and generates HTML, Python, SQL, or other languages. This open‑source tool streamlines development, empowering faster, smarter, and customizable code generation.",
+      "technologies": ["Langchain", "Ollama", "Codellama", "EasyOCR", "Streamlit"],
+      "tags": ["langchain", "python", "genai", "automation", "code-generation", "sql"],
+      "links": {
+        "github": "https://github.com/Ginga1402/Code_Design_with_GenAI",
+        "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_opensourceai-opensourcellm-opensource-activity-7255718427791646720-qoY3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
+      }
+    },
+    {
+      "id": "qwenstack-rag",
+      "index": 21,
+      "title": "QwenStack-RAG 🧠",
+      "description": "QwenStack‑RAG demonstrates how to transform documents into conversational knowledge using the full Qwen AI stack. It combines Qwen3 embeddings for semantic search, a reranker for passage prioritization, and a 4B LLM for fluent answers. Orchestrated with LangChain, ChromaDB, and Gradio, it delivers scalable, end‑to‑end Wikipedia QA and enterprise search.",
+      "technologies": ["Langchain", "ChromaDB", "Ollama", "Gradio", "Qwen3-Embedding & Reranker"],
+      "tags": ["rag", "langchain", "python"],
+      "links": {
+        "github": "https://github.com/Ginga1402/QwenStack-RAG--Qwen3--Embeddings--Reranker",
+        "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_rag-llm-retrievalaugmentedgeneration-activity-7341302460621172736-gW_8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
+      }
+    },
+    {
+      "id": "ai-powerdeck",
+      "index": 20,
+      "title": "AI PowerDeck: Your Dynamic Presentation Partner",
+      "description": "AI PowerDeck solves the challenge of creating presentations by using Generative AI and LLMs to automatically design dynamic, context‑aware slides. It enables users to generate compelling, topic‑driven presentations with ease and efficiency, transforming manual slide creation into an intelligent, automated process for education, business, and professional use.",
+      "technologies": ["Python", "Langchain", "CTransformers", "Streamlit"],
+      "tags": ["python","genai", "automation", "presentation"],
+      "links": {
+        "github": "https://github.com/Ginga1402/Generate_PPT_using_llama2"
+      }
+    },
+    {
+      "id": "house-price-prediction",
+      "index": 1,
+      "title": "House Price Prediction 🏘️",
+      "description": "House Price Prediction addresses real estate valuation challenges by analyzing property features through exploratory data analysis and linear regression. Built for Terro's real-estate agency, it evaluates geographic factors like pollution levels, crime rates, education facilities, and connectivity to determine accurate property pricing and business value assessment.",
+      "technologies": ["MS Excel", "Linear Regression", "EDA"],
+      "tags": ["excel", "linear-regression", "data-analysis", "ai-ml", "college-project"],
+      "links": {
+        "github": "https://github.com/Ginga1402/House-Price-Prediction"
+      }
+    },
+    {
+  "id": "car-price-prediction",
+  "index": 2,
+  "title": "Car Price Prediction 🏎️",
+  "description": "Car Price Prediction addresses used car valuation challenges by building regression models to predict accurate pricing. Analyzing Indian automotive market data including company, location, year, mileage, fuel type, transmission, and ownership history, it enables data-driven pricing decisions for dealers and buyers in the used car marketplace.",
+  "technologies": ["Python", "Regression Analysis", "Data Analytics"],
+  "tags": ["python", "regression", "data-analysis", "ai-ml", "prediction"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Car_Price_Prediction"
+  }
+},
+{
+  "id": "hbfc-bank-analysis",
+  "index": 3,
+  "title": "HBFC Bank Analysis 🏦",
+  "description": "HBFC Bank Analysis addresses targeted marketing challenges by analyzing previous campaign data to identify potential personal loan customers. Built for HBFC bank's savings account holders, it profiles customer behavior and preferences to enable data-driven, targeted marketing approaches for future personal loan campaigns, optimizing conversion rates and marketing ROI.",
+  "technologies": ["Python", "Data Analytics", "Customer Profiling"],
+  "tags": ["python", "data-analysis", "ai-ml", "banking", "marketing-analytics"],
+  "links": {
+    "github": "https://github.com/Ginga1402/HBFC_Bank_Analysis"
+  }
+},
+{
+  "id": "google-app-store-rating",
+  "index": 4,
+  "title": "Google App Store Rating Analysis 📲",
+  "description": "Google App Store Rating Analysis addresses app success prediction challenges by performing comprehensive EDA and data preprocessing on Play Store applications. Analyzing app ratings, categories, user feedback, and market trends, it extracts actionable insights to help developers identify success factors and incorporate features that drive app profitability in competitive markets.",
+  "technologies": ["Python", "EDA", "Data Preprocessing", "Pandas"],
+  "tags": ["python", "data-analysis", "ai-ml", "eda", "app-analytics"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Google_App_Store_Rating"
+  }
+},
+{
+  "id": "honey-production-visualization",
+  "index": 5,
+  "title": "Data Visualization on Honey Production Dataset 🍯",
+  "description": "Honey Production Data Visualization addresses the challenge of understanding America's declining honey industry by analyzing production trends from 1998-2012. Using Seaborn and Matplotlib, it investigates Colony Collapse Disorder impacts, supply-demand patterns, and state-wise production data to reveal insights into the shift from domestic production to overseas imports in the American honey market.",
+  "technologies": ["Python", "Seaborn", "Matplotlib", "Data Visualization"],
+  "tags": ["python", "data-analysis", "ai-ml", "visualization", "agriculture"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Data_Visualization_on_Honey_Production_dataset"
+  }
+},
+{
+  "id": "youtube-analysis",
+  "index": 6,
+  "title": "YouTube Analysis 🎬",
+  "description": "YouTube Analysis addresses social media data insights challenges by exploring YouTube's dislikes dataset before the platform's policy change in November 2021. Using NumPy and Pandas for comprehensive EDA, it uncovers hidden patterns in user engagement, content performance, and dislike trends to provide meaningful insights into YouTube's evolving social media landscape.",
+  "technologies": ["Python", "NumPy", "Pandas", "EDA"],
+  "tags": ["python", "data-analysis", "ai-ml", "social-media", "eda"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Youtube_Analysis"
+  }
+},
+{
+  "id": "travego-travellers",
+  "index": 7,
+  "title": "Travego Travellers 🚌",
+  "description": "Travego Travellers addresses database management challenges in the travel industry by implementing comprehensive MySQL operations for traveller data storage and retrieval. This mini project demonstrates various SQL statement types including INSERT, SELECT, UPDATE, and DELETE operations, enabling efficient data management for travel booking systems and customer information handling.",
+  "technologies": ["MySQL", "SQL", "Database Management"],
+  "tags": ["sql", "data-analysis", "database", "mysql"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Travego_Travellers"
+  }
+},
+{
+  "id": "chinook-database",
+  "index": 8,
+  "title": "Chinook Database Analysis 💿",
+  "description": "Chinook Database Analysis addresses digital media store data management challenges by implementing comprehensive SQL queries on a realistic music store database. Using Microsoft SQL Server Management Studio, it analyzes artists, albums, tracks, invoices, and customer data from real iTunes library information, enabling business intelligence insights for digital media retail operations.",
+  "technologies": ["Microsoft SQL Server", "SQL", "Database Analysis"],
+  "tags": ["sql", "data-analysis", "database", "business-intelligence"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Chinook_Database"
+  }
+},
+{
+  "id": "demand-supply-analysis",
+  "index": 9,
+  "title": "Demand-Supply Analysis ",
+  "description": "Demand-Supply Analysis addresses business optimization challenges by analyzing the relationship between quantity demanded and quantity supplied using Python data science libraries. Built with NumPy, Pandas, Matplotlib, and Seaborn, it helps businesses understand consumer demand factors, supply chain dynamics, and market trends to maximize profits and maintain competitive advantage in evolving markets.",
+  "technologies": ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
+  "tags": ["python", "data-analysis", "ai-ml", "business-intelligence", "economics"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Demand-Supply-Analysis"
+  }
+},
+{
+  "id": "youtube-engagement-system",
+  "index": 10,
+  "title": "YouTube Engagement System 🎬",
+  "description": "YouTube Engagement System addresses content optimization challenges by analyzing and predicting video engagement levels using machine learning techniques. Built with Python and regression models, it identifies patterns in likes, views, comments, and shares to help content creators and businesses make data-driven decisions for maximizing video impact and audience engagement in the digital landscape.",
+  "technologies": ["Python", "Machine Learning", "Regression Analysis", "Data Analytics"],
+  "tags": ["python", "data-analysis", "ai-ml", "regression", "social-media", "prediction"],
+  "links": {
+    "github": "https://github.com/Ginga1402/YouTube_Engagement_System"
+  }
+},
+{
+  "id": "store-sales-analysis-profit-prediction",
+  "index": 11,
+  "title": "Store Sales Analysis and Profit Prediction 🏬",
+  "description": "Store Sales Analysis and Profit Prediction addresses retail business optimization challenges by analyzing sales data and predicting future profitability using advanced machine learning algorithms. Built with Python data analysis techniques, it uncovers hidden patterns in customer behavior, sales trends, and market dynamics to enable informed business decisions and maximize profits in competitive retail environments.",
+  "technologies": ["Python", "Machine Learning", "Data Analytics", "Regression Analysis"],
+  "tags": ["python", "data-analysis", "ai-ml", "regression", "business-intelligence", "prediction"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Store_sales_Analysis_and_Profit_Prediction"
+  }
+},
+{
+  "id": "harry-potter-ai-chatbot",
+  "index": 12,
+  "title": "Harry Potter AI-Based Chatbot: Wizard Whispers 🪄",
+  "description": "Harry Potter AI Chatbot addresses interactive entertainment challenges by creating a custom Question-Answer system using natural language processing and RAG architecture. Built with AI/ML technologies, it provides an immersive Potterverse experience through contextual conversations, enabling users to chat with AI about Harry Potter lore while demonstrating advanced chatbot development techniques for custom domain knowledge.",
+  "technologies": ["Python", "NLP", "RAG", "AI/ML"],
+  "tags": ["python", "rag", "nlp", "chatbot", "entertainment"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Harry-Potter-AI-Chatbot"
+  }
+},
+{
+  "id": "linguaverse",
+  "index": 13,
+  "title": "🌐 Linguaverse: AI Language Learning Companion",
+  "description": "Linguaverse addresses language learning challenges by providing an AI-powered companion for mastering communication skills using cutting-edge generative AI technologies. Built with LangChain, Llama, and Whisper, it empowers users embarking on new language journeys, refining writing skills, and boosting conversational confidence through interactive AI-driven learning experiences in the future of education.",
+  "technologies": ["Python", "LangChain", "Llama", "Whisper", "GenAI"],
+  "tags": ["python", "genai", "nlp", "language-learning", "education"],
+  "links": {
+    "github": "https://github.com/Ginga1402/learn-languages-using-AI-langchain-llama-whisper"
+  }
+},
+{
+  "id": "aira-voice-assistant",
+  "index": 14,
+  "title": "Aira ✨: Intelligent Voice Assistant",
+  "description": "Aira Voice Assistant addresses conversational AI challenges by harnessing LLMs and Generative AI for fluid conversations with context-aware responses. Built with LangChain, Mistral, and Whisper, it revolutionizes user interaction through seamless voice conversations, contextual memory, and intelligent query handling, making it ideal for customer support, personal assistance, and interactive education applications.",
+  "technologies": ["Python", "LangChain", "Mistral", "Whisper", "GenAI"],
+  "tags": ["python", "genai", "nlp", "voice-assistant", "conversational-ai"],
+  "links": {
+    "github": "https://github.com/Ginga1402/voice-assistant-using-lanchain-whisper-mistral"
+  }
+},
+{
+  "id": "mcp-protocol",
+  "index": 15,
+  "title": "Model Context Protocol (MCP): Standardizing LLM‑Tool Integration",
+  "description": "Model Context Protocol (MCP) solves the challenge of connecting LLMs to real‑world tools by providing a standardized interface for APIs, databases, and services. Acting as a translator layer, MCP abstracts integration complexity, enabling scalable, extensible AI assistants that seamlessly perform tasks beyond text generation in enterprise and developer workflows.",
+  "technologies": ["Python", "Ollama", "Langchain", "langchain-mcp-adapters"],
+  "tags": ["python", "langchain", "ai-agents", "automation", "integration", "mcp"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Model-Context-Protocol-MCP-Demo-with-langchain-MCP-ADAPTERS-Ollama",
+    "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_github-langchain-ailangchain-mcp-adapters-activity-7317745151970328577-lDJF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
+  }
+},
+{
+  "id": "rag-technical-guide",
+  "index": 16,
+  "title": "RAG Retrieval-Augmented Generation: Technical Guide",
+  "description": "RAG Technical Guide addresses the challenge of understanding and implementing advanced Retrieval-Augmented Generation architectures by providing comprehensive Jupyter Notebook tutorials. Built with Python and various RAG frameworks, it explores Multi-Query, HyDE, and LangGraph-based Active RAG workflows, serving as a complete technical resource for developers learning RAG implementation patterns.",
+  "technologies": ["Python", "Jupyter Notebooks", "RAG", "LangGraph"],
+  "tags": ["python", "rag", "tutorial", "langchain", "jupyter"],
+  "links": {
+    "github": "https://github.com/Ginga1402/RAG-Retrieval-Augmented-Generation-Notebook"
+  }
+},
+{
+  "id": "text-to-speech-tts",
+  "index": 17,
+  "title": "Text-to-Speech (TTS) 💬",
+  "description": "Text-to-Speech addresses voice synthesis challenges by providing multiple implementation approaches for converting text into natural speech using various Python libraries and models. Built with Google gTTS, Microsoft SpeechT5, and Kokoro TTS, it offers solutions ranging from simple API-based conversion to advanced customizable voice synthesis systems for diverse project requirements.",
+  "technologies": ["Python", "gTTS", "Microsoft SpeechT5", "Kokoro TTS", "Hugging Face"],
+  "tags": ["python", "nlp", "genai", "tts", "voice-synthesis", "audio"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Text-to-Speech-TTS"
+  }
+},
+{
+  "id": "voice2text-whisper",
+  "index": 18,
+  "title": "🎙️ Voice2Text: Speech Transcription with OpenAI Whisper",
+  "description": "Voice2Text addresses speech transcription challenges by providing seamless audio-to-text conversion using OpenAI's Whisper model. Built with Python and Flask, it offers both function-level implementation and RESTful API integration for voice assistants, meeting transcriptions, and automated speech recognition with multilingual support and adjustable model sizes for optimal performance.",
+  "technologies": ["Python", "OpenAI Whisper", "Flask", "Speech Recognition"],
+  "tags": ["python", "nlp", "genai", "speech-to-text", "whisper", "audio"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Speech-To-Text-Using-Whisper"
+  }
+},
+{
+  "id": "multimodal-rag-playground",
+  "index": 19,
+  "title": "🚀 Multimodal RAG Playground: GPT-OSS vs Open Source LLMs",
+  "description": "Multimodal RAG Playground addresses LLM benchmarking challenges by enabling side-by-side comparison of multiple Large Language Models in RAG setups. Built with Streamlit, LangChain, ChromaDB, and Ollama, it allows users to upload PDFs, ask context-aware questions, and evaluate parallel responses from GPT-OSS, Qwen3, Phi-4, LLaMA 3.1, and Gemma 3 for accuracy, reasoning, and style analysis.",
+  "technologies": ["Python", "Streamlit", "LangChain", "ChromaDB", "Ollama", "BAAI BGE"],
+  "tags": ["python", "rag", "benchmarking", "multimodal", "llm-comparison"],
+  "links": {
+    "github": "https://github.com/Ginga1402/Multimodal-RAG-Playground_GPT-OSS_vs_Qwen3-Phi-4-LLaMA-3.1-Gemma-3",
+    "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_opensourceai-gptoss-openai-activity-7361271541168254976-vqn6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADuthhUBlaKQAoIwUzaKNcLb4ftav7Y-_Gw"
+  }
+},
+{
+  "id": "text-to-sql-agent",
+  "index": 25,
+  "title": "📚 Text-to-SQL Agent: Natural Language Database Query System",
+  "description": "Text-to-SQL Agent addresses database accessibility challenges by transforming natural language questions into executable SQL queries using LangGraph workflows. Built with LangChain, Ollama, and open-source LLMs, it bridges the gap between business users and database systems, enabling anyone to query databases using plain English without SQL knowledge through deterministic generation and execution.",
+  "technologies": ["Python", "LangGraph", "LangChain", "Ollama", "SQL"],
+  "tags": ["python", "sql", "nlp", "ai-agents"],
+  "links": {
+    "github": "https://github.com/Ginga1402/langgraph-text-to-sql-agent",
+    "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_texttosql-langchain-langgraph-activity-7379047559396425728-c8xm?utm_source=share&utm_medium=member_desktop&rcm=ACoAADuthhUBlaKQAoIwUzaKNcLb4ftav7Y-_Gw"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  ]
+}

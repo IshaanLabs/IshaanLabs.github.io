@@ -1,0 +1,110 @@
+{
+  "snippets": [
+    {
+      "id": "rag_pipeline",
+      "title": "RAG Pipeline Setup",
+      "commands": [
+        "$ python rag_system.py",
+        "> Initializing RAG pipeline...",
+        "> Loading documents from ./data/",
+        "> Creating embeddings with sentence-transformers...",
+        "> Building FAISS vector database...",
+        "> ✅ RAG system ready!",
+        "> ",
+        "> Query: \"How does retrieval work in RAG?\"",
+        "> 🔍 Searching knowledge base...",
+        "> 📄 Found 3 relevant documents",
+        "> 🤖 Generating response...",
+        "> ",
+        "> Response: \"RAG retrieval works by converting queries",
+        "> into embeddings, finding similar document chunks using",
+        "> cosine similarity, and passing relevant context to LLM.\"",
+        "> ✅ Query processed successfully!"
+      ]
+    },
+    {
+      "id": "langchain_setup",
+      "title": "LangChain Integration",
+      "commands": [
+        "$ python langchain_demo.py",
+        "from langchain.vectorstores import FAISS",
+        "from langchain.embeddings import HuggingFaceEmbeddings",
+        "from langchain.llms import Ollama",
+        "",
+        "# Initialize embeddings",
+        "embeddings = HuggingFaceEmbeddings()",
+        "",
+        "# Create vector store",
+        "vectorstore = FAISS.from_documents(docs, embeddings)",
+        "",
+        "# Setup LLM",
+        "llm = Ollama(model=\"llama3\")",
+        "",
+        "# Create RAG chain",
+        "rag_chain = RetrievalQA.from_chain_type(",
+        "    llm=llm,",
+        "    retriever=vectorstore.as_retriever()",
+        ")",
+        "",
+        "✅ LangChain RAG pipeline created successfully!"
+      ]
+    },
+    {
+      "id": "ai_chatbot",
+      "title": "AI Chatbot Development",
+      "commands": [
+        "$ python chatbot_engine.py",
+        "> Starting AI chatbot engine...",
+        "> Loading knowledge base...",
+        "> Initializing semantic search...",
+        "> Setting up conversation memory...",
+        "> ",
+        "class ChatbotEngine:",
+        "    def __init__(self):",
+        "        self.vectorizer = TfidfVectorizer()",
+        "        self.knowledge_base = self.load_knowledge()",
+        "        self.embeddings = self.create_embeddings()",
+        "    ",
+        "    def semantic_search(self, query):",
+        "        query_vec = self.vectorizer.transform([query])",
+        "        similarities = cosine_similarity(query_vec, self.embeddings)",
+        "        return self.get_best_match(similarities)",
+        "",
+        "> 🤖 Chatbot ready for conversations!",
+        "> 💬 Processing user queries with 95% accuracy..."
+      ]
+    },
+    {
+      "id": "data_processing",
+      "title": "Data Processing Pipeline",
+      "commands": [
+        "$ python data_pipeline.py",
+        "import pandas as pd",
+        "import numpy as np",
+        "from sklearn.preprocessing import StandardScaler",
+        "",
+        "# Load and process data",
+        "df = pd.read_csv('financial_data.csv')",
+        "print(f\"Dataset shape: {df.shape}\")",
+        "",
+        "# Feature engineering",
+        "df['anomaly_score'] = detect_anomalies(df)",
+        "df['risk_category'] = categorize_risk(df)",
+        "",
+        "# ML model training",
+        "model = train_anomaly_detector(df)",
+        "",
+        "> 📊 Processing 50,000+ financial records...",
+        "> 🔍 Anomaly detection accuracy: 95.2%",
+        "> 💾 Model saved to production/",
+        "> ✅ Pipeline deployment complete!"
+      ]
+    }
+  ],
+  "config": {
+    "typingSpeed": 50,
+    "pauseBetweenLines": 800,
+    "pauseBetweenSnippets": 3000,
+    "loopDelay": 5000
+  }
+}

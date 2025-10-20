@@ -294,171 +294,157 @@ document.querySelectorAll('.btn').forEach(button => {
     });
 });
 
-// Add micro-interactions to project cards
-document.querySelectorAll('.project-card').forEach(card => {
-    card.addEventListener('mouseenter', () => {
-        card.style.transform = 'translateY(-15px) rotateX(5deg) scale(1.03)';
-    });
-    
-    card.addEventListener('mouseleave', () => {
-        card.style.transform = 'translateY(0) rotateX(0) scale(1)';
-    });
-});
+// Enhanced micro-interactions handled by init3DProjectCards() function
 
-// Projects Carousel
-class ProjectsCarousel {
+// Projects Search & Filter Functionality
+class ProjectsGrid {
     constructor() {
-        this.carousel = document.getElementById('projects-carousel');
-        this.prevBtn = document.getElementById('carousel-prev');
-        this.nextBtn = document.getElementById('carousel-next');
-        this.indicators = document.querySelectorAll('.indicator');
-        this.currentSlide = 0;
-        this.totalProjects = document.querySelectorAll('.project-card').length;
-        this.isMobile = window.innerWidth <= 768;
-        this.visibleProjects = this.isMobile ? 1 : 3;
-        this.totalSlides = this.isMobile ? this.totalProjects : Math.max(1, this.totalProjects - this.visibleProjects + 1);
+        this.searchInput = document.getElementById('project-search-input');
+        this.searchClear = document.getElementById('project-search-clear');
+        this.projectTags = document.querySelectorAll('.project-tag');
+        this.noResultsMessage = document.getElementById('no-projects-found');
+        this.activeFilter = 'all';
         
         this.init();
-        this.generateIndicators();
     }
     
     init() {
-        this.prevBtn.addEventListener('click', () => this.prevSlide());
-        this.nextBtn.addEventListener('click', () => this.nextSlide());
+        if (!this.searchInput) return;
         
-        this.indicators.forEach((indicator, index) => {
-            indicator.addEventListener('click', () => this.goToSlide(index));
+        // Search input events
+        this.searchInput.addEventListener('input', (e) => this.handleSearch(e.target.value));
+        this.searchInput.addEventListener('focus', () => this.showSearchClear());
+        
+        // Clear search button
+        if (this.searchClear) {
+            this.searchClear.addEventListener('click', () => this.clearSearch());
+        }
+        
+        // Filter tag events
+        this.projectTags.forEach(tag => {
+            tag.addEventListener('click', () => this.handleFilter(tag.dataset.filter, tag));
         });
         
-        this.updateButtons();
-        this.addTouchSupport();
-        this.handleResize();
-    }
-    
-    handleResize() {
-        window.addEventListener('resize', () => {
-            const wasMobile = this.isMobile;
-            this.isMobile = window.innerWidth <= 768;
-            
-            if (wasMobile !== this.isMobile) {
-                this.visibleProjects = this.isMobile ? 1 : 3;
-                this.totalSlides = this.isMobile ? this.totalProjects : Math.max(1, this.totalProjects - this.visibleProjects + 1);
-                this.currentSlide = 0;
-                this.generateIndicators();
-                this.updateCarousel();
+        // Keyboard shortcuts
+        document.addEventListener('keydown', (e) => {
+            if (e.ctrlKey && e.key === 'k') {
+                e.preventDefault();
+                this.searchInput.focus();
+            }
+            if (e.key === 'Escape' && document.activeElement === this.searchInput) {
+                this.clearSearch();
             }
         });
     }
     
-    generateIndicators() {
-        const indicatorsContainer = document.getElementById('carousel-indicators');
-        indicatorsContainer.innerHTML = '';
+    handleSearch(query) {
+        const searchTerm = query.toLowerCase().trim();
         
-        for (let i = 0; i < this.totalSlides; i++) {
-            const indicator = document.createElement('span');
-            indicator.className = 'indicator';
-            if (i === 0) indicator.classList.add('active');
-            indicator.dataset.slide = i;
-            indicator.addEventListener('click', () => this.goToSlide(i));
-            indicatorsContainer.appendChild(indicator);
-        }
-        
-        this.indicators = document.querySelectorAll('.indicator');
-    }
-    
-    prevSlide() {
-        if (this.currentSlide > 0) {
-            this.currentSlide--;
-            this.updateCarousel();
-        }
-    }
-    
-    nextSlide() {
-        if (this.currentSlide < this.totalSlides - 1) {
-            this.currentSlide++;
-            this.updateCarousel();
-        }
-    }
-    
-    goToSlide(slideIndex) {
-        this.currentSlide = slideIndex;
-        this.updateCarousel();
-    }
-    
-    updateCarousel() {
-        const isMobile = window.innerWidth <= 768;
-        
-        let translateX;
-        if (isMobile) {
-            // Mobile: calculate based on actual card width + gap
-            const cardWidth = window.innerWidth - 100; // Account for container padding
-            const gap = 32; // 2rem gap
-            translateX = -this.currentSlide * (cardWidth + gap);
+        if (searchTerm.length > 0) {
+            this.searchClear.classList.add('show');
         } else {
-            // Desktop: existing logic
-            const containerWidth = this.carousel.parentElement.offsetWidth;
-            const cardWidth = 350 + 32;
-            if (this.currentSlide === this.totalSlides - 1) {
-                const totalCarouselWidth = this.totalProjects * cardWidth - 32;
-                translateX = -(totalCarouselWidth - containerWidth);
+            this.searchClear.classList.remove('show');
+        }
+        
+        this.filterProjects(searchTerm, this.activeFilter);
+    }
+    
+    handleFilter(filter, tagElement) {
+        // Update active tag
+        this.projectTags.forEach(tag => tag.classList.remove('active'));
+        tagElement.classList.add('active');
+        
+        this.activeFilter = filter;
+        const searchTerm = this.searchInput.value.toLowerCase().trim();
+        
+        this.filterProjects(searchTerm, filter);
+    }
+    
+    filterProjects(searchTerm, filter) {
+        // Get current project cards (they might be dynamically loaded)
+        const projectCards = document.querySelectorAll('.project-card');
+        let visibleCount = 0;
+        
+        projectCards.forEach(card => {
+            const title = card.querySelector('h3').textContent.toLowerCase();
+            const description = card.querySelector('p').textContent.toLowerCase();
+            const techTags = Array.from(card.querySelectorAll('.project-tech span'))
+                .map(span => span.textContent.toLowerCase());
+            const cardTags = card.dataset.tags ? card.dataset.tags.split(',') : [];
+            
+            // Check search match
+            const searchMatch = searchTerm === '' || 
+                title.includes(searchTerm) || 
+                description.includes(searchTerm) ||
+                techTags.some(tech => tech.includes(searchTerm)) ||
+                cardTags.some(tag => tag.includes(searchTerm));
+            
+            // Check filter match
+            const filterMatch = filter === 'all' || cardTags.includes(filter);
+            
+            // Show/hide card
+            if (searchMatch && filterMatch) {
+                this.showCard(card);
+                visibleCount++;
             } else {
-                translateX = -this.currentSlide * cardWidth;
+                this.hideCard(card);
+            }
+        });
+        
+        // Show/hide no results message
+        if (this.noResultsMessage) {
+            if (visibleCount === 0) {
+                this.noResultsMessage.style.display = 'block';
+            } else {
+                this.noResultsMessage.style.display = 'none';
             }
         }
         
-        this.carousel.style.transform = `translateX(${translateX}px)`;
-        
-        this.updateIndicators();
-        this.updateButtons();
+        // Add stagger animation to visible cards
+        this.staggerAnimation();
     }
     
-    updateIndicators() {
-        this.indicators.forEach((indicator, index) => {
-            indicator.classList.toggle('active', index === this.currentSlide);
-        });
+    showCard(card) {
+        card.classList.remove('hidden');
+        card.style.display = 'block';
     }
     
-    updateButtons() {
-        this.prevBtn.disabled = this.currentSlide === 0;
-        this.nextBtn.disabled = this.currentSlide === this.totalSlides - 1;
-    }
-    
-    addTouchSupport() {
-        let startX = 0;
-        let currentX = 0;
-        let isDragging = false;
-        
-        this.carousel.addEventListener('touchstart', (e) => {
-            startX = e.touches[0].clientX;
-            isDragging = true;
-        });
-        
-        this.carousel.addEventListener('touchmove', (e) => {
-            if (!isDragging) return;
-            currentX = e.touches[0].clientX;
-        });
-        
-        this.carousel.addEventListener('touchend', () => {
-            if (!isDragging) return;
-            
-            const diffX = startX - currentX;
-            if (Math.abs(diffX) > 50) {
-                if (diffX > 0) {
-                    this.nextSlide();
-                } else {
-                    this.prevSlide();
-                }
+    hideCard(card) {
+        card.classList.add('hidden');
+        setTimeout(() => {
+            if (card.classList.contains('hidden')) {
+                card.style.display = 'none';
             }
-            
-            isDragging = false;
+        }, 300);
+    }
+    
+    staggerAnimation() {
+        const visibleCards = Array.from(this.projectCards).filter(card => 
+            !card.classList.contains('hidden')
+        );
+        
+        visibleCards.forEach((card, index) => {
+            card.style.animationDelay = `${index * 0.1}s`;
+            card.classList.add('animate-in');
         });
+    }
+    
+    clearSearch() {
+        this.searchInput.value = '';
+        this.searchClear.classList.remove('show');
+        this.filterProjects('', this.activeFilter);
+        this.searchInput.blur();
+    }
+    
+    showSearchClear() {
+        if (this.searchInput.value.length > 0) {
+            this.searchClear.classList.add('show');
+        }
     }
 }
 
-// Initialize carousel when DOM is loaded
-document.addEventListener('DOMContentLoaded', () => {
-    new ProjectsCarousel();
-});
+// ProjectsGrid class available but not auto-initialized (handled by ProjectsLoader)
+window.ProjectsGrid = ProjectsGrid;
 
 // Advanced Search Functionality
 class AdvancedSearch {
@@ -715,19 +701,7 @@ class AdvancedSearch {
     }
     
     generateSuggestions(query) {
-        const matchingSuggestions = this.suggestions.filter(s => 
-            s.toLowerCase().includes(query.toLowerCase())
-        ).slice(0, 5);
-        
-        if (matchingSuggestions.length === 0) return '';
-        
-        let html = '<div class="search-suggestions">';
-        matchingSuggestions.forEach(suggestion => {
-            html += `<span class="search-suggestion" data-suggestion="${suggestion}">${suggestion}</span>`;
-        });
-        html += '</div>';
-        
-        return html;
+        return ''; // Suggestions disabled
     }
     
     generateCategoryResults(category, items, query) {
@@ -784,12 +758,7 @@ class AdvancedSearch {
     }
     
     showSuggestions() {
-        if (this.searchInput.value.length === 0) {
-            const html = this.generateSuggestions('');
-            this.searchResults.innerHTML = html;
-            this.showResults();
-            this.attachResultListeners();
-        }
+        // Suggestions disabled
     }
     
     showResults() {
@@ -821,12 +790,154 @@ document.addEventListener('DOMContentLoaded', () => {
     new AdvancedSearch();
 });
 
+// Phase 1 Interactive Features
+
+// Animated Counter Function
+function animateCounter(element, target, duration = 2000) {
+    let start = 0;
+    const increment = target / (duration / 16);
+    const timer = setInterval(() => {
+        start += increment;
+        element.textContent = Math.floor(start);
+        if (start >= target) {
+            clearInterval(timer);
+            element.textContent = target + '+';
+        }
+    }, 16);
+}
+
+// Stat Bar Animation (About section only)
+function animateStatBars() {
+    const statFills = document.querySelectorAll('.stat-fill');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const fill = entry.target;
+                const width = fill.dataset.width;
+                setTimeout(() => {
+                    fill.style.width = width;
+                }, 200);
+                observer.unobserve(fill);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    statFills.forEach(fill => {
+        observer.observe(fill);
+    });
+}
+
+// Counter Animation Observer
+function initCounterAnimation() {
+    const counters = document.querySelectorAll('.counter');
+    
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const counter = entry.target;
+                const target = parseInt(counter.dataset.target);
+                animateCounter(counter, target);
+                observer.unobserve(counter);
+            }
+        });
+    }, { threshold: 0.5 });
+    
+    counters.forEach(counter => {
+        observer.observe(counter);
+    });
+}
+
+// Achievement Badge Interactions
+function initAchievementBadges() {
+    const badges = document.querySelectorAll('.achievement-badge');
+    
+    badges.forEach(badge => {
+        badge.addEventListener('mouseenter', () => {
+            badge.style.transform = 'translateY(-5px) scale(1.05)';
+            const icon = badge.querySelector('.badge-icon');
+            icon.style.animation = 'bounce 0.6s ease';
+        });
+        
+        badge.addEventListener('mouseleave', () => {
+            badge.style.transform = 'translateY(0) scale(1)';
+        });
+        
+        badge.addEventListener('click', () => {
+            badge.style.animation = 'pulse 0.6s ease';
+            setTimeout(() => {
+                badge.style.animation = '';
+            }, 600);
+        });
+    });
+}
+
+// Enhanced Project Card 3D Effects
+function init3DProjectCards() {
+    const projectCards = document.querySelectorAll('.project-card');
+    
+    projectCards.forEach(card => {
+        card.addEventListener('mousemove', (e) => {
+            const rect = card.getBoundingClientRect();
+            const x = e.clientX - rect.left;
+            const y = e.clientY - rect.top;
+            
+            const centerX = rect.width / 2;
+            const centerY = rect.height / 2;
+            
+            const rotateX = (y - centerY) / 10;
+            const rotateY = (centerX - x) / 10;
+            
+            card.style.transform = `
+                translateY(-15px) 
+                rotateX(${rotateX}deg) 
+                rotateY(${rotateY}deg) 
+                scale(1.02)
+            `;
+        });
+        
+        card.addEventListener('mouseleave', () => {
+            card.style.transform = 'translateY(0) rotateX(0) rotateY(0) scale(1)';
+        });
+    });
+}
+
+// Initialize all Phase 1 features
+document.addEventListener('DOMContentLoaded', () => {
+    // Delay initialization to ensure DOM is fully loaded
+    setTimeout(() => {
+        initCounterAnimation();
+        animateStatBars();
+        initAchievementBadges();
+        init3DProjectCards();
+    }, 500);
+});
+
 // Console greeting
+// Experience Section Toggle Details
+function toggleDetails(element) {
+    const achievements = element.parentElement.querySelector('.experience-achievements');
+    const icon = element.querySelector('i');
+    const span = element.querySelector('span');
+    
+    element.classList.toggle('active');
+    achievements.classList.toggle('show');
+    
+    if (achievements.classList.contains('show')) {
+        span.textContent = 'Hide Details';
+    } else {
+        span.textContent = 'View Details';
+    }
+}
+
 console.log(`
 🚀 Welcome to Ishaan Kohli's Portfolio!
 📧 Contact: ishaankohli14@gmail.com
 🌐 LinkedIn: https://linkedin.com/in/kohli-ishaan/
 💻 GitHub: https://github.com/Ginga1402
+
+✨ Enhanced Experience Section Loaded!
+🎯 Interactive Cards | 🏢 Company Logos | 📊 Expandable Details | 🎮 Hover Effects
 
 Thanks for checking out my portfolio! 
 Feel free to reach out if you'd like to work together.
