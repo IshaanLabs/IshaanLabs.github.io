@@ -7,6 +7,8 @@ Feel free to explore my work — from AI projects and professional experience to
 
 📌 Visit the live site to learn more about me and my work. 
 
+
+
 ### 🌟 Why I Built This
 I created this portfolio to have a single space that represents my professional identity — a place where I can share my journey, achievements, and projects in Generative AI and Data Science. Beyond just being a resume, this website is meant to reflect who I am, what I build, and how I can create impact.
 
