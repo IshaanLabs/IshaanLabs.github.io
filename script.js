@@ -934,7 +934,7 @@ console.log(`
 🚀 Welcome to Ishaan Kohli's Portfolio!
 📧 Contact: ishaankohli14@gmail.com
 🌐 LinkedIn: https://linkedin.com/in/kohli-ishaan/
-💻 GitHub: https://github.com/Ginga1402
+💻 GitHub: https://github.com/IshaanLabs
 
 ✨ Enhanced Experience Section Loaded!
 🎯 Interactive Cards | 🏢 Company Logos | 📊 Expandable Details | 🎮 Hover Effects

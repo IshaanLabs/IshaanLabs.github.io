@@ -8,7 +8,7 @@
       "technologies": ["LangChain", "FAISS", "ollama", "Python", "FastAPI", "Docling"],
       "tags": ["rag", "langchain", "python", "ai-agents", "genai", "faiss", "ollama"],
       "links": {
-        "github": "https://github.com/Ginga1402/studybuddy-open-source-rag-notebooklm",
+        "github": "https://github.com/IshaanLabs/studybuddy-open-source-rag-notebooklm",
         "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_generativeai-rag-langchain-activity-7356296254219239426-8jr-/?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
       }
     },
@@ -20,7 +20,7 @@
       "technologies": ["Sarvam‑m LLM", "FAISS", "LangChain", "Flask", "Hugging Face", "Streamlit"],
       "tags": ["rag", "langchain", "python", "multilingual"],
       "links": {
-        "github": "https://github.com/Ginga1402/sanvad-hindi-rag-langchain-faiss-sarvam",
+        "github": "https://github.com/IshaanLabs/sanvad-hindi-rag-langchain-faiss-sarvam",
         "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_generativeai-rag-langchain-activity-7348335059210272769-mFnP?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
       }
     },
@@ -32,7 +32,7 @@
       "technologies": ["Langchain", "Ollama", "Codellama", "EasyOCR", "Streamlit"],
       "tags": ["langchain", "python", "genai", "automation", "code-generation", "sql"],
       "links": {
-        "github": "https://github.com/Ginga1402/Code_Design_with_GenAI",
+        "github": "https://github.com/IshaanLabs/Code_Design_with_GenAI",
         "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_opensourceai-opensourcellm-opensource-activity-7255718427791646720-qoY3?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
       }
     },
@@ -44,7 +44,7 @@
       "technologies": ["Langchain", "ChromaDB", "Ollama", "Gradio", "Qwen3-Embedding & Reranker"],
       "tags": ["rag", "langchain", "python"],
       "links": {
-        "github": "https://github.com/Ginga1402/QwenStack-RAG--Qwen3--Embeddings--Reranker",
+        "github": "https://github.com/IshaanLabs/QwenStack-RAG--Qwen3--Embeddings--Reranker",
         "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_rag-llm-retrievalaugmentedgeneration-activity-7341302460621172736-gW_8?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
       }
     },
@@ -56,7 +56,7 @@
       "technologies": ["Python", "Langchain", "CTransformers", "Streamlit"],
       "tags": ["python","genai", "automation", "presentation"],
       "links": {
-        "github": "https://github.com/Ginga1402/Generate_PPT_using_llama2"
+        "github": "https://github.com/IshaanLabs/Generate_PPT_using_llama2"
       }
     },
     {
@@ -67,7 +67,7 @@
       "technologies": ["MS Excel", "Linear Regression", "EDA"],
       "tags": ["excel", "linear-regression", "data-analysis", "ai-ml", "college-project"],
       "links": {
-        "github": "https://github.com/Ginga1402/House-Price-Prediction"
+        "github": "https://github.com/IshaanLabs/House-Price-Prediction"
       }
     },
     {
@@ -78,7 +78,7 @@
   "technologies": ["Python", "Regression Analysis", "Data Analytics"],
   "tags": ["python", "regression", "data-analysis", "ai-ml", "prediction"],
   "links": {
-    "github": "https://github.com/Ginga1402/Car_Price_Prediction"
+    "github": "https://github.com/IshaanLabs/Car_Price_Prediction"
   }
 },
 {
@@ -89,7 +89,7 @@
   "technologies": ["Python", "Data Analytics", "Customer Profiling"],
   "tags": ["python", "data-analysis", "ai-ml", "banking", "marketing-analytics"],
   "links": {
-    "github": "https://github.com/Ginga1402/HBFC_Bank_Analysis"
+    "github": "https://github.com/IshaanLabs/HBFC_Bank_Analysis"
   }
 },
 {
@@ -100,7 +100,7 @@
   "technologies": ["Python", "EDA", "Data Preprocessing", "Pandas"],
   "tags": ["python", "data-analysis", "ai-ml", "eda", "app-analytics"],
   "links": {
-    "github": "https://github.com/Ginga1402/Google_App_Store_Rating"
+    "github": "https://github.com/IshaanLabs/Google_App_Store_Rating"
   }
 },
 {
@@ -111,7 +111,7 @@
   "technologies": ["Python", "Seaborn", "Matplotlib", "Data Visualization"],
   "tags": ["python", "data-analysis", "ai-ml", "visualization", "agriculture"],
   "links": {
-    "github": "https://github.com/Ginga1402/Data_Visualization_on_Honey_Production_dataset"
+    "github": "https://github.com/IshaanLabs/Data_Visualization_on_Honey_Production_dataset"
   }
 },
 {
@@ -122,7 +122,7 @@
   "technologies": ["Python", "NumPy", "Pandas", "EDA"],
   "tags": ["python", "data-analysis", "ai-ml", "social-media", "eda"],
   "links": {
-    "github": "https://github.com/Ginga1402/Youtube_Analysis"
+    "github": "https://github.com/IshaanLabs/Youtube_Analysis"
   }
 },
 {
@@ -133,7 +133,7 @@
   "technologies": ["MySQL", "SQL", "Database Management"],
   "tags": ["sql", "data-analysis", "database", "mysql"],
   "links": {
-    "github": "https://github.com/Ginga1402/Travego_Travellers"
+    "github": "https://github.com/IshaanLabs/Travego_Travellers"
   }
 },
 {
@@ -144,7 +144,7 @@
   "technologies": ["Microsoft SQL Server", "SQL", "Database Analysis"],
   "tags": ["sql", "data-analysis", "database", "business-intelligence"],
   "links": {
-    "github": "https://github.com/Ginga1402/Chinook_Database"
+    "github": "https://github.com/IshaanLabs/Chinook_Database"
   }
 },
 {
@@ -155,7 +155,7 @@
   "technologies": ["Python", "NumPy", "Pandas", "Matplotlib", "Seaborn"],
   "tags": ["python", "data-analysis", "ai-ml", "business-intelligence", "economics"],
   "links": {
-    "github": "https://github.com/Ginga1402/Demand-Supply-Analysis"
+    "github": "https://github.com/IshaanLabs/Demand-Supply-Analysis"
   }
 },
 {
@@ -166,7 +166,7 @@
   "technologies": ["Python", "Machine Learning", "Regression Analysis", "Data Analytics"],
   "tags": ["python", "data-analysis", "ai-ml", "regression", "social-media", "prediction"],
   "links": {
-    "github": "https://github.com/Ginga1402/YouTube_Engagement_System"
+    "github": "https://github.com/IshaanLabs/YouTube_Engagement_System"
   }
 },
 {
@@ -177,7 +177,7 @@
   "technologies": ["Python", "Machine Learning", "Data Analytics", "Regression Analysis"],
   "tags": ["python", "data-analysis", "ai-ml", "regression", "business-intelligence", "prediction"],
   "links": {
-    "github": "https://github.com/Ginga1402/Store_sales_Analysis_and_Profit_Prediction"
+    "github": "https://github.com/IshaanLabs/Store_sales_Analysis_and_Profit_Prediction"
   }
 },
 {
@@ -188,7 +188,7 @@
   "technologies": ["Python", "NLP", "RAG", "AI/ML"],
   "tags": ["python", "rag", "nlp", "chatbot", "entertainment"],
   "links": {
-    "github": "https://github.com/Ginga1402/Harry-Potter-AI-Chatbot"
+    "github": "https://github.com/IshaanLabs/Harry-Potter-AI-Chatbot"
   }
 },
 {
@@ -199,7 +199,7 @@
   "technologies": ["Python", "LangChain", "Llama", "Whisper", "GenAI"],
   "tags": ["python", "genai", "nlp", "language-learning", "education"],
   "links": {
-    "github": "https://github.com/Ginga1402/learn-languages-using-AI-langchain-llama-whisper"
+    "github": "https://github.com/IshaanLabs/learn-languages-using-AI-langchain-llama-whisper"
   }
 },
 {
@@ -210,7 +210,7 @@
   "technologies": ["Python", "LangChain", "Mistral", "Whisper", "GenAI"],
   "tags": ["python", "genai", "nlp", "voice-assistant", "conversational-ai"],
   "links": {
-    "github": "https://github.com/Ginga1402/voice-assistant-using-lanchain-whisper-mistral"
+    "github": "https://github.com/IshaanLabs/voice-assistant-using-lanchain-whisper-mistral"
   }
 },
 {
@@ -221,7 +221,7 @@
   "technologies": ["Python", "Ollama", "Langchain", "langchain-mcp-adapters"],
   "tags": ["python", "langchain", "ai-agents", "automation", "integration", "mcp"],
   "links": {
-    "github": "https://github.com/Ginga1402/Model-Context-Protocol-MCP-Demo-with-langchain-MCP-ADAPTERS-Ollama",
+    "github": "https://github.com/IshaanLabs/Model-Context-Protocol-MCP-Demo-with-langchain-MCP-ADAPTERS-Ollama",
     "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_github-langchain-ailangchain-mcp-adapters-activity-7317745151970328577-lDJF?utm_source=share&utm_medium=member_desktop&rcm=ACoAAElrwpYBUVKESMa-7Tb_Inoy1krvlMxpp0M"
   }
 },
@@ -233,7 +233,7 @@
   "technologies": ["Python", "Jupyter Notebooks", "RAG", "LangGraph"],
   "tags": ["python", "rag", "tutorial", "langchain", "jupyter"],
   "links": {
-    "github": "https://github.com/Ginga1402/RAG-Retrieval-Augmented-Generation-Notebook"
+    "github": "https://github.com/IshaanLabs/RAG-Retrieval-Augmented-Generation-Notebook"
   }
 },
 {
@@ -244,7 +244,7 @@
   "technologies": ["Python", "gTTS", "Microsoft SpeechT5", "Kokoro TTS", "Hugging Face"],
   "tags": ["python", "nlp", "genai", "tts", "voice-synthesis", "audio"],
   "links": {
-    "github": "https://github.com/Ginga1402/Text-to-Speech-TTS"
+    "github": "https://github.com/IshaanLabs/Text-to-Speech-TTS"
   }
 },
 {
@@ -255,7 +255,7 @@
   "technologies": ["Python", "OpenAI Whisper", "Flask", "Speech Recognition"],
   "tags": ["python", "nlp", "genai", "speech-to-text", "whisper", "audio"],
   "links": {
-    "github": "https://github.com/Ginga1402/Speech-To-Text-Using-Whisper"
+    "github": "https://github.com/IshaanLabs/Speech-To-Text-Using-Whisper"
   }
 },
 {
@@ -266,7 +266,7 @@
   "technologies": ["Python", "Streamlit", "LangChain", "ChromaDB", "Ollama", "BAAI BGE"],
   "tags": ["python", "rag", "benchmarking", "multimodal", "llm-comparison"],
   "links": {
-    "github": "https://github.com/Ginga1402/Multimodal-RAG-Playground_GPT-OSS_vs_Qwen3-Phi-4-LLaMA-3.1-Gemma-3",
+    "github": "https://github.com/IshaanLabs/Multimodal-RAG-Playground_GPT-OSS_vs_Qwen3-Phi-4-LLaMA-3.1-Gemma-3",
     "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_opensourceai-gptoss-openai-activity-7361271541168254976-vqn6?utm_source=share&utm_medium=member_desktop&rcm=ACoAADuthhUBlaKQAoIwUzaKNcLb4ftav7Y-_Gw"
   }
 },
@@ -278,7 +278,7 @@
   "technologies": ["Python", "LangGraph", "LangChain", "Ollama", "SQL"],
   "tags": ["python", "sql", "nlp", "ai-agents"],
   "links": {
-    "github": "https://github.com/Ginga1402/langgraph-text-to-sql-agent",
+    "github": "https://github.com/IshaanLabs/langgraph-text-to-sql-agent",
     "linkedin": "https://www.linkedin.com/posts/kohli-ishaan_texttosql-langchain-langgraph-activity-7379047559396425728-c8xm?utm_source=share&utm_medium=member_desktop&rcm=ACoAADuthhUBlaKQAoIwUzaKNcLb4ftav7Y-_Gw"
   }
 }
